@@ -12,15 +12,15 @@ import {
 function App (){
   const router = createBrowserRouter([
     {
-      path: "lauragolec/",
+      path: "/",
       element: <Home />,
     },
     {
-      path: "lauragolec/about",
+      path: "/about",
       element: <About />,
     },
     {
-      path: "lauragolec/contact",
+      path: "/contact",
       element: <Contact />,
     },
   ]);
