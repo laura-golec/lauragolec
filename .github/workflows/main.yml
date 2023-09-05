@@ -25,7 +25,7 @@ jobs:
       - name: build app
         run: npm run build && npm run gh-pages:404
         env:
-          PUBLIC_URL: /lauragolec
+          PUBLIC_URL: https://laura-golec.github.io/lauragolec/
       - name: upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
