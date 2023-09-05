@@ -1,2 +1,0 @@
-# lauragolec
-website repo
