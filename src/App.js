@@ -7,6 +7,7 @@ import Contact from "./pages/contact/Contact.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Menu from "./components/menu/Menu.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import "./styles/global.css"
 
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 
