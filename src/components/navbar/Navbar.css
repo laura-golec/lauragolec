@@ -1,2 +1,10 @@
-.navbar{
+.link-styling{
+    display: 'flex';
+    align-items: 'center';
+    justify-content: center;
+    color: white;
+    padding: 0 5% 2% 0;
+    justify-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
