@@ -38,13 +38,13 @@
   }
   
   .blob-2 {
-    left: 0%;
+    left: 5%;
     top: 40%;
     width: 500px;
   }
   
   .blob-3 {
-    left: 20%;
+    left: 40%;
     top: 30%;
     width: 800px;
   }
@@ -68,7 +68,7 @@
   }
   
   .blob-7 {
-    left: 25%; /* Center horizontally in the 30% section */
+    left: 30%; /* Center horizontally in the 30% section */
     top: 20%; /* Center vertically in the 30% section */
   }
 
