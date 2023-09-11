@@ -2,9 +2,12 @@
     display: 'flex';
     align-items: 'center';
     justify-content: center;
-    color: white;
-    padding: 0 5% 2% 0;
+    color: var(--fadedcolour);
+    padding: 1% 1%;
     justify-items: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    text-align: center;
+}
+
+.link-styling:hover{
+    color: white;
 }

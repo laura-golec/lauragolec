@@ -1,11 +1,13 @@
 import React from "react";
 import "./Menu.css";
-import { Box } from '@mui/material'
+import { Box, Stack} from '@mui/material'
 
 function Menu() {
   return(
-    <Box p={1} sx={{ backgroundColor: "#13e87a", display: "inline"}}></Box>
-      );
+    <Stack>
+      
+    </Stack>
+  );
 }
 
 export default Menu;

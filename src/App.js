@@ -2,25 +2,32 @@ import React from "react";
 import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
-import { Navbar, Footer, Menu } from "./components";
+import { Navbar, Footer} from "./components";
 import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-
+import './utils/globals.css';
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
   const Layout = () => {
     return (
-      <Box sx={{ backgroundColor: '#12332c' }}>
+      <Box
+        sx={{
+          backgroundColor: 'var(--mainbg)',
+          display: 'flex-box',
+          flexDirection: 'column',
+          height: '100vh',
+        }}
+      >
         <Navbar />
-        <Box sx={{ display: "flex" }}>
-          <Menu />
+        <Box sx={{overflow: 'hidden' }}>
           <Outlet />
         </Box>
         <Footer />
       </Box>
     );
   };
+  
 
   const router = createHashRouter([
     {
@@ -50,14 +57,23 @@ function App() {
       },
     },
     typography: {
-      fontFamily: 'Lato',
+      fontFamily: ['Lato'],
+    },
+    components: {
+      MuiCssBaseline: {
+        styleOverrides: {
+          html: [
+            {'@font-face': 'Lato'},
+          ],
+        }
+      },
     },
   });
 
   return (
     <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
-    </ThemeProvider> 
+    </ThemeProvider>
   );
 
 }

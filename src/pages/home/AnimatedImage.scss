@@ -1,0 +1,21 @@
+.animated-image {
+    /* Remove fixed positioning and set a fixed height */
+    width: var(--size); /* Adjust the height as needed */
+    position: 'absolute'; /* Use absolute positioning for overlapping */
+
+    @keyframes moveRandomDirection {
+        0%, 100% {
+            top: var(--startTop, 30%);
+            left: var(--startLeft, 30%);
+        }
+        50% {
+            top: calc(var(--startTop, 30%) + var(--randomTop, 0%));
+            left: calc(var(--startLeft, 30%) + var(--randomLeft, 0%));
+        }
+    }
+
+    animation: moveRandomDirection 3s linear infinite;
+
+    /* Add a z-index to control stacking order */
+    z-index: 1; /* Adjust the value as needed */
+}
