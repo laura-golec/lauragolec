@@ -1,2 +1,13 @@
-.navbar{
+.link-styling{
+    display: 'flex';
+    align-items: 'center';
+    justify-content: center;
+    color: var(--fadedcolour);
+    padding: 1% 1%;
+    justify-items: center;
+    text-align: center;
+}
+
+.link-styling:hover{
+    color: white;
 }

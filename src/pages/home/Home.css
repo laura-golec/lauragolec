@@ -1,3 +1,101 @@
-.home{
-    
-}
+/* Home.css */
+
+.home-container {
+    display: flex;
+    height: 100vh; /* 100% of the viewport height */
+    position: relative; /* Enable relative positioning for blobs */
+  }
+  
+  .seventy-percent {
+    flex: 6; /* 70% of the available width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .thirty-percent {
+    flex: 4; /* 30% of the available width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blob-container {
+    position: relative; /* Enable relative positioning for blobs within this container */
+    width: 90%; /* Ensure the blob container doesn't exceed its parent width */
+    height: 90%; /* Ensure the blob container doesn't exceed its parent height */
+  }
+  
+  .blob {
+    position: absolute;
+  }
+  
+  /* Adjust the position of each blob as needed */
+  .blob-1 {
+    left: 0%;
+    top: 10%;
+    width: 400px;
+  }
+  
+  .blob-2 {
+    left: 0%;
+    top: 40%;
+    width: 500px;
+  }
+  
+  .blob-3 {
+    left: 20%;
+    top: 30%;
+    width: 800px;
+  }
+  
+  .blob-4 {
+    left: 30%;
+    top: 0%;
+    width: 600px;
+  }
+  
+  .blob-5 {
+    left: 10%;
+    top: 5%;
+    width: 800px;
+  }
+  
+  .blob-6 {
+    left: 10%; /* Center horizontally in the 30% section */
+    top: 0%; /* Center vertically in the 30% section */
+    width: 100%;
+  }
+  
+  .blob-7 {
+    left: 25%; /* Center horizontally in the 30% section */
+    top: 20%; /* Center vertically in the 30% section */
+  }
+
+
+  /* Home.css */
+
+/* ... (previous CSS) */
+
+/* Keyframes for smooth repeating animation */
+@keyframes moveBlob {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(var(--x), var(--y));
+    }
+  }
+  
+  /* Apply the animation to all blobs */
+  .blob {
+    animation: moveBlob 7s linear infinite alternate;
+  }
+
+  .text-on-blobs {
+    position: absolute;
+    z-index: 1; /* Ensure the text is on top of the blobs */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for visibility */
+  }
+  

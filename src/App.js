@@ -1,33 +1,33 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "./App.css";
 import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
-import Navbar from "./components/navbar/Navbar.jsx";
-import Menu from "./components/menu/Menu.jsx";
-import Footer from "./components/footer/Footer.jsx";
-import "./styles/global.css"
-
+import { Navbar, Footer} from "./components";
+import { Box } from '@mui/material';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import './utils/globals.css';
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
   const Layout = () => {
     return (
-      <div className="main">
+      <Box
+        sx={{
+          backgroundColor: 'var(--mainbg)',
+          display: 'flex-box',
+          flexDirection: 'column',
+          height: '100vh',
+        }}
+      >
         <Navbar />
-        <div className="container">
-          <div className="menuContainer">
-            <Menu />
-          </div>
-          <div className="contentContainer">
-            <Outlet />
-          </div>
-        </div>
+        <Box sx={{overflow: 'hidden' }}>
+          <Outlet />
+        </Box>
         <Footer />
-      </div>
+      </Box>
     );
   };
+  
 
   const router = createHashRouter([
     {
@@ -50,11 +50,33 @@ function App() {
     },
   ]);
 
-  return ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
+  const theme = createTheme({
+    palette: {
+      background: {
+        default: "#222222"
+      },
+    },
+    typography: {
+      fontFamily: ['Lato'],
+    },
+    components: {
+      MuiCssBaseline: {
+        styleOverrides: {
+          html: [
+            {'@font-face': 'Lato'},
+          ],
+        }
+      },
+    },
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
-    </React.StrictMode>
+    </ThemeProvider>
   );
+
 }
+
 
 export default App;
