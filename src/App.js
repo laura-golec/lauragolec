@@ -1,7 +1,5 @@
 import React from "react";
-import Home from "./pages/home/Home.jsx";
-import About from "./pages/about/About.jsx";
-import Contact from "./pages/contact/Contact.jsx";
+import { Home, Projects, About, Contact } from './pages';
 import { Navbar, Footer} from "./components";
 import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -37,6 +35,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/projects",
+          element: <Projects />,
         },
         {
           path: "/about",
