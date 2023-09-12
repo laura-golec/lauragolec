@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'; // Import your CSS file for styling
+import './Home.css';
 import BlobOne from './images/blobone.png';
 import BlobTwo from './images/blobtwo.png';
 import BlobThree from './images/blobthree.png';
@@ -10,9 +10,8 @@ import BlobSeven from './images/blobseven.png';
 import { Typography } from '@mui/material';
 
 const getRandomPosition = () => {
-  // Generate random x and y values within the specified range
-  const randomX = (Math.random() * 4 - 2).toFixed(2); // Random value between -2% and 2%
-  const randomY = (Math.random() * 4 - 2).toFixed(2); // Random value between -2% and 2%
+  const randomX = (Math.random() * 5 - 1).toFixed(2); 
+  const randomY = (Math.random() * 5 - 1).toFixed(2);
 
   return { x: randomX, y: randomY };
 };
@@ -62,7 +61,6 @@ const Home = () => {
         }}>
           LAURA GOLEC
         </Typography>
-        {/* Center the 5 blobs horizontally and prevent clipping */}
         <div className="blob-container">
           <div className="blob-wrapper">
             <img
@@ -115,7 +113,6 @@ const Home = () => {
         </div>
       </div>
       <div className="thirty-percent">
-        {/* Center the 6th blob horizontally and prevent clipping */}
         <div className="blob-container">
           <div className="blob-wrapper">
             <Typography sx={{
