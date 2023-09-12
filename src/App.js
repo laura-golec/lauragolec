@@ -19,7 +19,7 @@ function App() {
       >
         <Navbar />
         <Box sx={{overflow: 'hidden' }}>
-          <Outlet />
+          <Outlet/>
         </Box>
         <Footer />
       </Box>
