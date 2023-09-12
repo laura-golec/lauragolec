@@ -3,7 +3,7 @@
   height: 100vh;
   ;
   position: relative;
-  margin-top: -5%;
+  margin-top:-7%;
 }
 
 .seventy-percent {
@@ -33,31 +33,31 @@
 .blob-1 {
   left: 0%;
   top: 10%;
-  width: 400px;
+  width: 20vw;
 }
 
 .blob-2 {
   left: 5%;
   top: 40%;
-  width: 500px;
+  width: 30vw;
 }
 
 .blob-3 {
   left: 40%;
-  top: 30%;
-  width: 800px;
+  top: 20%;
+  width: 45vw;
 }
 
 .blob-4 {
   left: 30%;
   top: 0%;
-  width: 600px;
+  width: 30vw
 }
 
 .blob-5 {
   left: 10%;
   top: 5%;
-  width: 800px;
+  width: 40vw;
 }
 
 .blob-6 {
@@ -69,6 +69,7 @@
 .blob-7 {
   left: 30%;
   top: 20%;
+  width: 40vw;
 }
 
 @keyframes moveBlob {

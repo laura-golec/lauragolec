@@ -17,10 +17,10 @@ const getRandomPosition = () => {
   return { x: randomX, y: randomY };
 };
 
-var widths = [0, 640, 1920];
+var widths = [0,1400];
 
 function Home() {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[2]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
 
   const handleResize = () => {
     setIsWideScreen(window.innerWidth >= widths[2]);
@@ -71,7 +71,7 @@ function Home() {
             <Typography sx={{
               fontWeight: '900',
               position: 'absolute',
-              fontSize: '200px',
+              fontSize: '12vw',
               zIndex: '1',
               color: 'white',
               top: '65%',
@@ -136,7 +136,7 @@ function Home() {
                 <Typography sx={{
                   fontWeight: '700',
                   position: 'absolute',
-                  fontSize: '50px',
+                  fontSize: '2.5vw',
                   zIndex: '1',
                   color: 'black',
                   top: '25%',
@@ -148,7 +148,7 @@ function Home() {
                 <Typography sx={{
                   fontWeight: '400',
                   position: 'absolute',
-                  fontSize: '30px',
+                  fontSize: '1.75vw',
                   zIndex: '1',
                   color: 'black',
                   top: '42%',
@@ -176,7 +176,7 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '700',
-                fontSize: '80px',
+                fontSize: '15vw',
                 zIndex: '1',
                 color: 'white',
                 margin: 2,
@@ -188,11 +188,12 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '600',
-                fontSize: '60px',
+                fontSize: '10vw',
                 zIndex: '1',
                 color: 'white',
                 margin: 2,
-                marginLeft: 8,
+                marginRight: 10,
+                textAlign: 'right',
                 zIndex: '3'
               }}
             >
@@ -201,7 +202,7 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '900',
-                fontSize: '28vw',
+                fontSize: '70px',
                 zIndex: '1',
                 color: 'white',
                 margin: 2,
