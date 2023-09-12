@@ -15,6 +15,7 @@ sx={{
   borderTop: "solid 1px var(--darkbg)",
   color: 'var(--fadedcolour)',
   textAlign: 'center',
+  margin: 0,
 }}>
   <Typography> Copyright © 2023 Laura Golec</Typography>
 </Box>

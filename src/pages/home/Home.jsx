@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import BlobOne from './images/blobone.png';
 import BlobTwo from './images/blobtwo.png';
@@ -169,17 +170,160 @@ function Home() {
       );
     } else {
       return (
-        <Box sx={{ display: 'flexbox' }}>
-          <Typography
-            sx={{
-              fontWeight: '400',
-              fontSize: '80px',
-              zIndex: '1',
-              color: 'white',
+        <Box sx={{ display: 'flexbox', position: 'relative', marginBottom: 0, paddingBottom: '-2',}}>
+
+          <Box sx={{ display: 'flexbox', zIndex: '5', position: 'relative'}}>
+            <Typography
+              sx={{
+                fontWeight: '700',
+                fontSize: '80px',
+                zIndex: '1',
+                color: 'white',
+                margin: 2,
+                zIndex: '3'
+              }}
+            >
+              Hey!
+            </Typography>
+            <Typography
+              sx={{
+                fontWeight: '600',
+                fontSize: '60px',
+                zIndex: '1',
+                color: 'white',
+                margin: 2,
+                marginLeft: 8,
+                zIndex: '3'
+              }}
+            >
+              My name is
+            </Typography>
+            <Typography
+              sx={{
+                fontWeight: '900',
+                fontSize: '28vw',
+                zIndex: '1',
+                color: 'white',
+                margin: 2,
+                zIndex: '23',
+              }}
+            >
+              LAURA
+              GOLEC
+            </Typography>
+            <Typography
+              sx={{
+                fontWeight: '600',
+                fontSize: '20px',
+                zIndex: '1',
+                color: 'var(--fadedcolour)',
+                margin: 2,
+                textAlign: 'left',
+                zIndex: '3'
+              }}
+            >
+              I am currently looking <br />
+              for an internship
+            </Typography>
+            <Link to='/projects'>
+              <Typography
+                sx={{
+                  fontWeight: '600',
+                  fontSize: '20px',
+                  zIndex: '1',
+                  color: 'var(--fadedcolour)',
+                  margin: 5,
+                  textAlign: 'right',
+                  zIndex: 3
+                }}
+              >
+                Check out <br />
+                my work
+              </Typography>
+            </Link>
+          </Box>
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              width: '100%',
+              zIndex: '1', // To place it behind other content
+              height: '10vh',
+              marginBottom: '-2',
+              paddingBottom: '-2',
             }}
           >
-            You are on mobile
-          </Typography>
+            <div className="hero_area">
+              <svg
+                className="waves smallWave"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none"
+                shapeRendering="auto"
+              >
+                <defs>
+                  <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                  />
+                </defs>
+                <g className="parallax">
+                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(50, 168, 147,0.5)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(50, 168, 166,0.3)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(58, 201, 173,0.1)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(50, 168, 147,0.7)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              width: '100%',
+              zIndex: 1, // To place it behind other content
+              height: '50vh',
+              marginBottom: '-2',
+              paddingBottom: '-2',
+            }}
+          >
+            <div className="hero_area">
+              <svg
+                className="waves bigWave"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none"
+                shapeRendering="auto"
+              >
+                <defs>
+                  <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                  />
+                </defs>
+                <g className="parallax">
+                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(11, 33, 28,0.5)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(11, 33, 28,0.3)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(11, 33, 28,0.1)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(11, 33, 28,0.7)" />
+                </g>
+              </svg>
+            </div>
+            <div style={{
+              position: 'absolute',
+              bottom: '-10vh',
+              width: '100%',
+              zIndex: '-10', // To place it behind other content
+              height: '50vh',
+              marginBottom: '-2',
+              paddingBottom: '-2',
+              backgroundColor: "rgba(11, 33, 28,0.7)"
+            }}>
+            </div>
+          </div>
         </Box>
       );
     }
