@@ -42,8 +42,11 @@ const Navbar = () => {
         backgroundColor: "var(--mainbg)",
         padding: '10px',
         borderBottom: "solid 1px var(--brightbg)",
-        width: '100vw',
+        width: '100%',
         zIndex: 9999,
+        height: '5vh',
+        margin: 0,
+        position: 'absolute'
       }}
     >
       <Stack
@@ -94,6 +97,7 @@ const Navbar = () => {
       borderBottom: "solid 1px var(--brightbg)",
       width: '100vw',
       zIndex: 9999,
+      height: '5vh'
     }}>
       <IconButton onClick={openDrawer} sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
         <MenuIcon sx={{ fontSize: 40 }} />

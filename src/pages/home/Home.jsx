@@ -17,7 +17,7 @@ const getRandomPosition = () => {
   return { x: randomX, y: randomY };
 };
 
-var widths = [0,1400];
+var widths = [0, 1400];
 
 function Home() {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
@@ -170,17 +170,17 @@ function Home() {
       );
     } else {
       return (
-        <Box sx={{ display: 'flexbox', position: 'relative', marginBottom: 0, paddingBottom: '-2',}}>
+        <Box sx={{ display: 'block', position: 'absolute', marginBottom: 0, height: '91vh', width: '100%', overflow: 'clip' }}>
 
-          <Box sx={{ display: 'flexbox', zIndex: '5', position: 'relative'}}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh' }}>
             <Typography
               sx={{
                 fontWeight: '700',
                 fontSize: '15vw',
-                zIndex: '1',
                 color: 'var(--accent)',
-                margin: 2,
-                zIndex: '3'
+                zIndex: '3',
+                bottom: '75vh',
+                left: '4vw'
               }}
             >
               Hey!
@@ -189,12 +189,11 @@ function Home() {
               sx={{
                 fontWeight: '600',
                 fontSize: '6vh',
-                zIndex: '1',
                 color: 'var(--text)',
-                margin: '0 2',
-                marginLeft: 8,
-                zIndex: '3',
-                lineHeight:'4vh'
+                bottom: '65vh',
+                textAlign: 'center',
+                width: '70vw',
+                left: '10vw'
               }}
             >
               My name is
@@ -202,130 +201,160 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '900',
-                fontSize: '70px',
-                zIndex: '1',
+                fontSize: '22vh',
                 color: 'var(--primary)',
-                margin: 2,
-                zIndex: '23',
-                lineHeight:'28vh'
+                margin: '-3vh 0',
+                textAlign: 'justify-all',
+                bottom: '47vh',
+                width: '100vw',
               }}
             >
               LAURA
-              GOLEC
             </Typography>
             <Typography
               sx={{
+                fontWeight: '900',
+                fontSize: '22vh',
+                color: 'var(--primary)',
+                margin: '-5vh 0',
+                textAlign: 'center',
+                bottom: '30vh',
+                width: '100vw',
+              }}
+            >
+              GOLEC
+            </Typography>
+
+            <Typography
+              sx={{
                 fontWeight: '600',
-                fontSize: '20px',
-                zIndex: '1',
-                color: 'var(--text)',
-                margin: 2,
+                fontSize: '2vh',
+                color: 'var(--fadedcolour)',
+                left: '4vw',
                 textAlign: 'left',
-                zIndex: '3'
+                bottom: '15vh',
+                width: '70vw'
               }}
             >
               I am Computer Science student <br />
               currently looking for an internship
             </Typography>
-            <Link to='/projects'>
-              <Typography
-                sx={{
-                  fontWeight: '600',
-                  fontSize: '20px',
-                  zIndex: '1',
-                  color: 'var(--fadedcolour)',
-                  margin: 5,
-                  textAlign: 'right',
-                  zIndex: 3
-                }}
-              >
-                Check out <br />
-                my work
-              </Typography>
-            </Link>
-          </Box>
-          <div
-            style={{
-              position: 'absolute',
-              bottom: 0,
-              width: '100%',
-              zIndex: '2', // To place it behind other content
-              height: '10vh',
-              marginBottom: '-2',
-              paddingBottom: '-2',
-            }}
-          >
-            <div className="hero_area">
-              <svg
-                className="waves smallWave"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28"
-                preserveAspectRatio="none"
-                shapeRendering="auto"
-              >
-                <defs>
-                  <path
-                    id="gentle-wave"
-                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                  />
-                </defs>
-                <g className="parallax">
-                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(65, 180, 122,0.5)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(65, 180, 122,0.3)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(65, 180, 122,0.1)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(65, 180, 122,0.7)" />
-                </g>
-              </svg>
-            </div>
-          </div>
 
-          <div
-            style={{
-              position: 'absolute',
-              bottom: 0,
-              width: '100%',
-              zIndex: 1, // To place it behind other content
-              height: '50vh',
-              marginBottom: '-2',
-              paddingBottom: '-2',
-            }}
-          >
-            <div className="hero_area">
-              <svg
-                className="waves bigWave"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28"
-                preserveAspectRatio="none"
-                shapeRendering="auto"
-              >
-                <defs>
-                  <path
-                    id="gentle-wave"
-                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                  />
-                </defs>
-                <g className="parallax">
-                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(210, 224, 239,0.5)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(210, 224, 239,0.3)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(210, 224, 239,0.1)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(210, 224, 239,0.7)" />
-                </g>
-              </svg>
-            </div>
-            <div style={{
-              position: 'absolute',
-              bottom: '-10vh',
-              width: '100%',
-              zIndex: '-10', // To place it behind other content
-              height: '45.52vh',
-              marginBottom: '-2',
-              paddingBottom: '-2',
-              backgroundColor: "rgba(210, 224, 239,0.9)"
-            }}>
-            </div>
-          </div>
+            <Typography
+              sx={{
+                fontWeight: '600',
+                fontSize: '2vh',
+                color: 'var(--fadedcolour)',
+                left: '-4vw',
+                textAlign: 'right',
+                position: 'absolute',
+                bottom: '5vh',
+                width: '100vw'
+              }}
+            >
+              Check out my work!
+            </Typography>
+          </Box>
+
+          <Box sx={{ display: 'flex', height: '93vh', flexDirection: 'column', bottom: '0' }}>
+  <div
+    style={{
+      width: '100%',
+      zIndex: '1', // To place it behind other content
+      height: '10vh', // Height of the greenish wave
+      position: 'absolute',
+      bottom: '45vh',
+      margin: '-0.6vh'
+    }}
+  >
+    <div className="hero_area">
+      <svg
+        className="waves bigWave"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shapeRendering="auto"
+      >
+        {/* SVG Content */}
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g className="parallax">
+          <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(210, 224, 239, 0.5)" />
+          <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(210, 224, 239, 0.3)" />
+          <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(210, 224, 239, 0.1)" />
+          <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(210, 224, 239, 0.7)" />
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div
+    style={{
+      position: 'absolute',
+      bottom: '0vh', // At the very bottom of the screen
+      left: '0',
+      width: '100%',
+      zIndex: '2',
+      height: '40vh', // Remaining screen height below the greenish wave
+      backgroundColor: 'rgba(210, 224, 239, 0.9)', // Match wave color with 0.9 alpha
+    }}
+  ></div>
+
+  <div
+    style={{
+      position: 'absolute',
+      width: '100%',
+      zIndex: '2', // To place it behind other content
+      height: '15vh', // Height of the blueish wave
+      bottom: '5vh',
+      padding: '-0.5vh',
+      margin: '-0.6vh'
+    }}
+  >
+    <div className="hero_area">
+      <svg
+        className="waves smallWave"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shapeRendering="auto"
+      >
+        {/* SVG Content */}
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g className="parallax">
+          <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(65, 180, 122,0.5)" />
+          <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(65, 180, 122,0.3)" />
+          <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(65, 180, 122,0.1)" />
+          <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(65, 180, 122,0.7)" />
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div
+    style={{
+      position: 'absolute',
+      bottom: '0', // At the very bottom of the screen
+      left: '0',
+      width: '100%',
+      zIndex: '2',
+      height: '5vh', // Remaining screen height below the blueish wave
+      backgroundColor: 'rgba(65, 180, 122, 0.9)', // Match wave color with 0.9 alpha
+    }}
+  ></div>
+</Box>
+
         </Box>
       );
     }
