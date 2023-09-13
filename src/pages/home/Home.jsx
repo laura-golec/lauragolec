@@ -172,15 +172,16 @@ function Home() {
       return (
         <Box sx={{ display: 'block', position: 'absolute', marginBottom: 0, height: '91vh', width: '100%', overflow: 'clip' }}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh', bottom:'0' }}>
             <Typography
               sx={{
                 fontWeight: '700',
                 fontSize: '15vw',
                 color: 'var(--accent)',
                 zIndex: '3',
-                bottom: '75vh',
-                left: '4vw'
+                bottom: '72vh',
+                left: '4vw',
+                position: 'absolute',
               }}
             >
               Hey!
@@ -192,6 +193,7 @@ function Home() {
                 color: 'var(--text)',
                 bottom: '65vh',
                 textAlign: 'center',
+                position: 'absolute',
                 width: '70vw',
                 left: '10vw'
               }}
@@ -201,12 +203,13 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '900',
-                fontSize: '22vh',
+                fontSize: '20vw',
                 color: 'var(--primary)',
-                margin: '-3vh 0',
-                textAlign: 'justify-all',
-                bottom: '47vh',
+                margin: '0',
+                bottom: '42vh',
+                position: 'absolute',
                 width: '100vw',
+                left: '4vw'
               }}
             >
               LAURA
@@ -214,12 +217,13 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '900',
-                fontSize: '22vh',
+                fontSize: '20vw',
                 color: 'var(--primary)',
                 margin: '-5vh 0',
                 textAlign: 'center',
                 bottom: '30vh',
                 width: '100vw',
+                position: 'absolute'
               }}
             >
               GOLEC
@@ -233,6 +237,7 @@ function Home() {
                 left: '4vw',
                 textAlign: 'left',
                 bottom: '15vh',
+                position: 'absolute',
                 width: '70vw'
               }}
             >
@@ -264,7 +269,7 @@ function Home() {
       height: '10vh', // Height of the greenish wave
       position: 'absolute',
       bottom: '45vh',
-      margin: '-0.6vh'
+      marginBottom: '-0.6vh'
     }}
   >
     <div className="hero_area">
@@ -313,7 +318,7 @@ function Home() {
       height: '15vh', // Height of the blueish wave
       bottom: '5vh',
       padding: '-0.5vh',
-      margin: '-0.6vh'
+      marginBottom: '-0.6vh'
     }}
   >
     <div className="hero_area">
