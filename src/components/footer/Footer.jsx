@@ -16,8 +16,12 @@ sx={{
   color: 'var(--fadedcolour)',
   textAlign: 'center',
   margin: 0,
+  padding: '0.2vh',
+  zIndex: 99,
+  height: '1.5vh',
+  
 }}>
-  <Typography> Copyright © 2023 Laura Golec</Typography>
+  <Typography fontSize='1.4vh'> Copyright © 2023 Laura Golec</Typography>
 </Box>
   );
 }

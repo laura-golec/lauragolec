@@ -39,7 +39,7 @@ const Navbar = () => {
       alignItems="center"
       justifyContent="space-between"
       sx={{
-        backgroundColor: "var(--darkbg)",
+        backgroundColor: "var(--mainbg)",
         padding: '10px',
         borderBottom: "solid 1px var(--brightbg)",
         width: '100vw',
@@ -71,13 +71,13 @@ const Navbar = () => {
         justifyContent="right"
         sx={{ width: '20%', marginRight: '1%' }}
       >
-        <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+        <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <EmailIcon sx={{ fontSize: 45 }} />
         </IconButton>
-        <IconButton href="https://github.com/laura-golec" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+        <IconButton href="https://github.com/laura-golec" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <GitHubIcon sx={{ fontSize: 40 }} />
         </IconButton>
-        <IconButton href="https://www.linkedin.com/in/laura-golec/" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+        <IconButton href="https://www.linkedin.com/in/laura-golec/" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <LinkedInIcon sx={{ fontSize: 50 }} />
         </IconButton>
       </Stack>
@@ -89,13 +89,13 @@ const Navbar = () => {
     alignItems="center"
     justifyContent="space-between"
     sx={{
-      backgroundColor: "var(--darkbg)",
+      backgroundColor: "var(--mainbg)",
       padding: '10px',
       borderBottom: "solid 1px var(--brightbg)",
       width: '100vw',
       zIndex: 9999,
     }}>
-      <IconButton onClick={openDrawer} sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+      <IconButton onClick={openDrawer} sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
         <MenuIcon sx={{ fontSize: 40 }} />
       </IconButton>
       <Drawer
@@ -110,7 +110,7 @@ const Navbar = () => {
           sx={{
             width: '70vw',
             height: '100%',
-            backgroundColor: 'var(--darkbg)',
+            backgroundColor: 'var(--secondary)',
             display: 'flexbox'
           }}
         >
@@ -120,7 +120,7 @@ const Navbar = () => {
             textAlign="center"
             display='flex'
           >
-            <Typography sx={{ fontSize: 25, fontWeight: 'bold', color:'white', paddingTop:'20%', borderBottom:'2px solid'}}>
+            <Typography sx={{ fontSize: 25, fontWeight: 'bold', color:'var(--accent)', paddingTop:'20%', borderBottom:'2px solid'}}>
                 Laura Golec
             </Typography>
             <Link to="/" className="link-styling">
@@ -139,13 +139,13 @@ const Navbar = () => {
         </Box>
       </Drawer>
       <Stack direction='row' marginRight='1%'>
-        <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+        <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "primary" } }}>
           <EmailIcon sx={{ fontSize: 45 }} />
         </IconButton>
-        <IconButton href="https://github.com/laura-golec" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+        <IconButton href="https://github.com/laura-golec" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "primary" } }}>
           <GitHubIcon sx={{ fontSize: 40 }} />
         </IconButton>
-        <IconButton href="https://www.linkedin.com/in/laura-golec/" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "white" } }}>
+        <IconButton href="https://www.linkedin.com/in/laura-golec/" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "primary" } }}>
           <LinkedInIcon sx={{ fontSize: 50 }} />
         </IconButton>
       </Stack>
