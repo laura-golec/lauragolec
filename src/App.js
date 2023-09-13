@@ -15,6 +15,8 @@ function App() {
           display: 'flex-box',
           flexDirection: 'column',
           height: '100vh',
+          width: '100vw',
+          overflow: 'clip!important'
         }}
       >
         <Navbar />
