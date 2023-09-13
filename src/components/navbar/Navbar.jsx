@@ -7,12 +7,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import MenuIcon from '@mui/icons-material/Menu';
 
-var widths = [0, 640, 1920];
+var widths = [0, 1400];
 
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[2]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
 
   const openDrawer = () => {
     setOpen(true);
