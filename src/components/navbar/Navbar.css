@@ -9,9 +9,12 @@
 }
 
 .link-styling:hover{
-    color: white;
+    color: var(--primary);
 }
 
 .icon-styling{
     color: var(--fadedcolour);
+}
+.icon-styling:hover{
+    color: var(--primary);
 }

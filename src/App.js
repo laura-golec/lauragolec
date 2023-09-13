@@ -60,6 +60,26 @@ function App() {
     },
     typography: {
       fontFamily: ['Lato'],
+      h1:{
+        fontFamily: ['Lato'],
+        fontWeight: 800,
+      },
+      h2:{
+        fontFamily: ['Lato'],
+        fontWeight: 800,
+      },
+      h3:{
+        fontFamily: ['Lato'],
+        fontWeight: 700,
+      },
+      h4:{
+        fontFamily: ['Lato'],
+        fontWeight: 700,
+      },
+      body1:{
+        fontFamily: ['Lato'],
+        fontWeight: 500,
+      },
     },
     components: {
       MuiCssBaseline: {

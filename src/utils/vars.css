@@ -1,6 +1,13 @@
 :root{
-    --mainbg: #071411;
+    --mainbg: #f0f0f0;
     --darkbg: #050f0d;
     --brightbg: #0a1a16;
     --fadedcolour: #5e5e5e;
+    --contrastingbg: #072217;
+
+    --text: #0f0505;
+    --primary: #1f5656;
+    --secondary: #d2e0ef;
+    --accent: #41b47a;
 }
+/* --mainbg: #071411; */

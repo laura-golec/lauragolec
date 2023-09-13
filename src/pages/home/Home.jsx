@@ -51,7 +51,7 @@ function Home() {
               position: 'absolute',
               fontSize: '100px',
               zIndex: '1',
-              color: 'white',
+              color: 'var(--accent)',
               top: '25%',
               left: '15%'
             }}>
@@ -62,7 +62,7 @@ function Home() {
               position: 'absolute',
               fontSize: '100px',
               zIndex: '1',
-              color: 'white',
+              color: 'var(--text)',
               top: '40%',
               left: '20%'
             }}>
@@ -73,7 +73,7 @@ function Home() {
               position: 'absolute',
               fontSize: '12vw',
               zIndex: '1',
-              color: 'white',
+              color: 'var(--primary)',
               top: '65%',
               left: '10%'
             }}>
@@ -140,7 +140,7 @@ function Home() {
                   zIndex: '1',
                   color: 'black',
                   top: '25%',
-                  left: '35%'
+                  left: '40%'
                 }}>
                   I am a Computer <br />
                   Science student
@@ -152,7 +152,7 @@ function Home() {
                   zIndex: '1',
                   color: 'black',
                   top: '42%',
-                  left: '35%'
+                  left: '40%'
                 }}>
                   Currently looking for <br />
                   an internship
@@ -178,7 +178,7 @@ function Home() {
                 fontWeight: '700',
                 fontSize: '15vw',
                 zIndex: '1',
-                color: 'white',
+                color: 'var(--accent)',
                 margin: 2,
                 zIndex: '3'
               }}
@@ -188,13 +188,13 @@ function Home() {
             <Typography
               sx={{
                 fontWeight: '600',
-                fontSize: '10vw',
+                fontSize: '6vh',
                 zIndex: '1',
-                color: 'white',
-                margin: 2,
-                marginRight: 10,
-                textAlign: 'right',
-                zIndex: '3'
+                color: 'var(--text)',
+                margin: '0 2',
+                marginLeft: 8,
+                zIndex: '3',
+                lineHeight:'4vh'
               }}
             >
               My name is
@@ -204,9 +204,10 @@ function Home() {
                 fontWeight: '900',
                 fontSize: '70px',
                 zIndex: '1',
-                color: 'white',
+                color: 'var(--primary)',
                 margin: 2,
                 zIndex: '23',
+                lineHeight:'28vh'
               }}
             >
               LAURA
@@ -217,14 +218,14 @@ function Home() {
                 fontWeight: '600',
                 fontSize: '20px',
                 zIndex: '1',
-                color: 'var(--fadedcolour)',
+                color: 'var(--text)',
                 margin: 2,
                 textAlign: 'left',
                 zIndex: '3'
               }}
             >
-              I am currently looking <br />
-              for an internship
+              I am Computer Science student <br />
+              currently looking for an internship
             </Typography>
             <Link to='/projects'>
               <Typography
@@ -248,7 +249,7 @@ function Home() {
               position: 'absolute',
               bottom: 0,
               width: '100%',
-              zIndex: '1', // To place it behind other content
+              zIndex: '2', // To place it behind other content
               height: '10vh',
               marginBottom: '-2',
               paddingBottom: '-2',
@@ -270,10 +271,10 @@ function Home() {
                   />
                 </defs>
                 <g className="parallax">
-                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(50, 168, 147,0.5)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(50, 168, 166,0.3)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(58, 201, 173,0.1)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(50, 168, 147,0.7)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(65, 180, 122,0.5)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(65, 180, 122,0.3)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(65, 180, 122,0.1)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(65, 180, 122,0.7)" />
                 </g>
               </svg>
             </div>
@@ -306,10 +307,10 @@ function Home() {
                   />
                 </defs>
                 <g className="parallax">
-                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(11, 33, 28,0.5)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(11, 33, 28,0.3)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(11, 33, 28,0.1)" />
-                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(11, 33, 28,0.7)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={0} fill="rgba(210, 224, 239,0.5)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(210, 224, 239,0.3)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(210, 224, 239,0.1)" />
+                  <use xlinkHref="#gentle-wave" x={48} y={7} fill="rgba(210, 224, 239,0.7)" />
                 </g>
               </svg>
             </div>
@@ -318,10 +319,10 @@ function Home() {
               bottom: '-10vh',
               width: '100%',
               zIndex: '-10', // To place it behind other content
-              height: '50vh',
+              height: '45.52vh',
               marginBottom: '-2',
               paddingBottom: '-2',
-              backgroundColor: "rgba(11, 33, 28,0.7)"
+              backgroundColor: "rgba(210, 224, 239,0.9)"
             }}>
             </div>
           </div>
