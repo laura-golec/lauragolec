@@ -56,11 +56,6 @@ function App() {
   ]);
 
   const theme = createTheme({
-    palette: {
-      background: {
-        default: "#222222"
-      },
-    },
     typography: {
       fontFamily: ['Lato'],
       h1:{

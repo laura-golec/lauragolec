@@ -5,7 +5,8 @@ a{
 
 li{
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
 }
 
 ul{
@@ -14,3 +15,11 @@ ul{
     padding-inline-start: 0;
 }
 
+.css-6hp17o-MuiList-root-MuiMenu-list{
+    padding: 0!important;
+    border-radius: 3vh!important;
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    border-radius: 1vh!important;
+}
