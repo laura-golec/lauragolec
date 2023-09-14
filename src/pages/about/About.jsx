@@ -52,7 +52,7 @@ function About() {
     )
 
     return (
-        <div className='about' justifyContent='center'>
+        <div className='about' justifyContent='center' paddingBottom='10vh'>
             <div style={{ display: 'flex', alignContent: 'center', justifyContent: 'center', flexDirection: 'column', justifySelf: 'center!important' }}>
                 <Profile />
                 <Typography variant='h3' sx={{ backgroundColor: 'var(--mainbg)', color: 'var(--accent)', paddingTop: '2vh', textAlign: 'center' }}>
