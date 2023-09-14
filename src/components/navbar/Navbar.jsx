@@ -143,13 +143,13 @@ const Navbar = () => {
         </Box>
       </Drawer>
       <Stack direction='row' marginRight='1%'>
-        <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "primary" } }}>
+        <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <EmailIcon sx={{ fontSize: 45 }} />
         </IconButton>
-        <IconButton href="https://github.com/laura-golec" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "primary" } }}>
+        <IconButton href="https://github.com/laura-golec" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <GitHubIcon sx={{ fontSize: 40 }} />
         </IconButton>
-        <IconButton href="https://www.linkedin.com/in/laura-golec/" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "primary" } }}>
+        <IconButton href="https://www.linkedin.com/in/laura-golec/" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <LinkedInIcon sx={{ fontSize: 50 }} />
         </IconButton>
       </Stack>
