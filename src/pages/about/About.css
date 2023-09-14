@@ -11,10 +11,10 @@
 }
 
 .about{
-    padding-top: 1vh;
     background-color: var(--mainbg);
     display: grid;
     justify-content: center;
+    padding: 1vh 2vw;
 }
 
 .aboutContent{
