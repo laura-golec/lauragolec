@@ -1,2 +1,75 @@
-.about{
+@media (min-width: 1400px) {
+    .about {
+        margin-top: 2vh!important;
+    }
 }
+
+@media (max-width: 1400px) {
+    .about{
+        margin-top: 0vh!important;
+    }
+}
+
+.about{
+    padding-top: 1vh;
+    background-color: var(--mainbg);
+    display: grid;
+    justify-content: center;
+}
+
+.aboutContent{
+    background-color: var(--mainbg);
+    height: 100vh;
+}
+
+.blob-containerAbout {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    margin: 1vw;
+    margin-bottom: -3vw;
+    justify-self: center;
+    margin-left: calc(50% - 15vw);
+  }
+  
+  .blobAbout {
+    animation: moveBlob 7s linear infinite alternate;
+    position: absolute;
+  }
+  
+  .blob-1About {
+    left: 15%;
+    top: -10%;
+    width: 30vw;
+  }
+  
+  .blob-2About {
+    left: 10%;
+    top: 0%;
+    width: 30vw;
+  }
+  
+  .blob-3About {
+    left: -10%;
+    top: -10%;
+    width: 30vw;
+    transform: rotate(0.5turn)!important;
+  }
+  
+  .blob-4About {
+    left: 0%;
+    top: 2%;
+    width: 30vw
+  }
+
+  @keyframes moveBlob {
+
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(var(--x), var(--y));
+    }
+  }
