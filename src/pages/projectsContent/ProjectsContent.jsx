@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 function ProjectsContent() {
   return (
-    <Box sx={{padding: '2vw 1vw', color:'var(--text)'}} className="projects-content">
+    <Box sx={{padding: '2vw 1vw', color:'var(--text)', backgroundColor:'var(--mainbg)'}} className="projects-content">
       <div>
         {/* Contents component will go here */}
       </div>
