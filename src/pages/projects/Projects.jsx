@@ -23,7 +23,7 @@ const Projects = () => {
 
   const renderWideScreenHeader = () => (
     <div>
-      <StickyBox><Contents /></StickyBox>
+      <Contents />
     </div>
   )
 
@@ -35,7 +35,7 @@ const Projects = () => {
 
   const renderMobileHeader = () => (
     <div style={{ display: 'flex', direction: 'row', alignItems: 'center'}}>
-      <StickyBox><Contents /></StickyBox>
+      <Contents />
       <Typography variant='h2' padding='1vw' color='var(--accent)' backgroundcolor='var(--mainbg)'>
         Projects
       </Typography>
@@ -45,7 +45,9 @@ const Projects = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'row', position: 'relative', overflow: 'clip', backgroundColor: 'var(--secondary)' }}>
       <div>
+      <StickyBox>
         {isWideScreen ? renderWideScreenHeader(): undefined}
+        </StickyBox>
       </div>
       <div paddingbottom='5vh' marginbottom='5vh' backgroundcolor='var(--mainbg)'>
         <div>

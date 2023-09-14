@@ -63,9 +63,6 @@ const Navbar = () => {
         <Link to="/about" className="link-styling">
           <Typography sx={{ fontSize: 25, fontWeight: 'bold' }}>About</Typography>
         </Link>
-        <Link to="/contact" className="link-styling">
-          <Typography sx={{ fontSize: 25, fontWeight: 'bold' }}>Contact</Typography>
-        </Link>
       </Stack>
 
       <Stack
@@ -135,9 +132,6 @@ const Navbar = () => {
             </Link>
             <Link to="/about" className="link-styling">
               <Typography sx={{ fontSize: 25, fontWeight: 'bold' }}>About</Typography>
-            </Link>
-            <Link to="/contact" className="link-styling">
-              <Typography sx={{ fontSize: 25, fontWeight: 'bold' }}>Contact</Typography>
             </Link>
           </Stack>
         </Box>

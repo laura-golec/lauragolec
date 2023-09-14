@@ -70,7 +70,7 @@ const Contents = () => {
 
   const renderWideScreenContents = () => (
     <Box sx={{ padding: '3vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', }}>
-      <Typography color='var(--text)' variant='h4' borderBottom='2px solid' marginBottom='1vh' padding='0 1vw'>Contents</Typography>
+      <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='1vh' padding='0 1vw'>Contents</Typography>
       <ul justifycontent='center' aligntext='center'>
         {headings.map((heading) => (
           <li key={heading.id} onClick={() => scrollToHeading(`#${heading.id}`)}>
