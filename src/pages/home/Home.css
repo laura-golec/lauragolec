@@ -1,7 +1,9 @@
 .home-container {
   display: flex;
-  height: 91vh;
+  height: 99vh;
   position: relative;
+  padding-top: -10vh;
+  margin-top: -5vh;
 }
 
 .seventy-percent {

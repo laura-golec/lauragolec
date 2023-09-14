@@ -44,7 +44,7 @@ function Home() {
       const blob7Position = getRandomPosition();
 
       return (
-        <div className="home-container">
+        <div className="home-container" style={{overflow:'clip'}}>
           <div className="seventy-percent">
             <Typography sx={{
               fontWeight: '800',
