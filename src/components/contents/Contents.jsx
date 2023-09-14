@@ -31,10 +31,14 @@ const Contents = () => {
 
   function scrollToHeading(headingId) {
     console.log(headingId)
-    document.querySelector(headingId).scrollIntoView();
+    document.querySelector(headingId).scrollIntoView({behavior: "smooth"});
   }
 
-  
+  useEffect(() => {
+    if (document.getElementById(hash.slice(1))) {
+      scrollToHeading(hash);
+    }
+  }, [hash, headings])
   
 
   return (
