@@ -12,15 +12,16 @@ function App() {
       <Box
         sx={{
           backgroundColor: 'var(--mainbg)',
-          display: 'flex-box',
+          display: 'flex',
           flexDirection: 'column',
-          height: '100vh',
+          height: '99vh',
           width: '100vw',
-          overflow: 'clip!important'
+          overflowY: 'scroll',
+          overflowX: 'hidden'
         }}
       >
         <Navbar />
-        <Box sx={{overflow: 'hidden' }}>
+        <Box sx={{overflowY: 'scroll'}}>
           <Outlet/>
         </Box>
         <Footer />

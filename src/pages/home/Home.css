@@ -1,9 +1,7 @@
 .home-container {
   display: flex;
-  height: 100vh;
-  ;
+  height: 91vh;
   position: relative;
-  margin-top:-7%;
 }
 
 .seventy-percent {
@@ -97,14 +95,12 @@
 
 .hero_area {
   position: relative;
-  background-color: black;
+
 }
 
 .waves {
   position: absolute;
   width: 100%;
-  min-height: 100px;
-  max-height: 150px;
   left: 0;
 }
 
@@ -133,11 +129,11 @@
 }
 
 .smallWave{
-  height: 30vh;
+  height: 10vh;
 }
 
 .bigWave{
-  height: 70vh;
+  height: 30vh;
 }
 
 @keyframes move-forever {
