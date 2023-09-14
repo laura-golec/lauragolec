@@ -62,13 +62,11 @@ function About() {
 
             <div className='aboutContent' style={{ maxWidth: '800px' }}>
                 <Typography variant='body1' >
-                    Hi, I am Laura Golec! I am a 4th year Trinity Computer Science student in the Masters Programme of my course.
-                    I am currently seeking a 6 month software engineering internship at the beginning of 2024 as part of my course.
-
+                    Hi, I am Laura Golec! I am a 4th year student in Trinity College Dublin, in the Computer Science Masters Programme. I am currently seeking a 6-8 month software engineering internship at the beginning of 2024 as part of my course.
                     <br />
                     <br />
 
-                    I have a particular interest in frontend development and love coherent and maintainable frontend code using the most modern standards.
+                    I have a particular interest in frontend development. I love working with and creating coherent and maintainable frontend code using modern standards.
 
                     <br />
                     <br />
@@ -143,7 +141,7 @@ function About() {
                     <Typography variant='h6' sx={{ width: 'fit-content', fontWeight: '600' }}>
                         Software
                     </Typography>
-                    <Typography variant='body1' sx={{ borderBottom: 'solid 1px var(--fadedcolour)', fontWeight: '500' }}>
+                    <Typography variant='body1' sx={{ borderBottom: 'solid 1px var(--fadedcolour)', fontWeight: '500', marginBottom:'5vh' }}>
                         React
                         <br />
                         Vue.js
