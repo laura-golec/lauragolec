@@ -4,6 +4,8 @@ import { Box, Typography } from '@mui/material';
 import './Contents.css';
 import { useLocation } from 'react-router-dom';
 
+var widths = [0, 1400];
+
 const Contents = () => {
   const [headings, setHeadings] = useState([]);
   const { hash } = useLocation();
@@ -39,6 +41,28 @@ const Contents = () => {
       scrollToHeading(hash);
     }
   }, [hash, headings])
+
+  const [open, setOpen] = useState(false);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
+
+  const openContents = () => {
+    setOpen(true);
+  };
+
+  const closeContents = () => {
+    setOpen(false);
+  };
+
+  const handleResize = () => {
+    setIsWideScreen(window.innerWidth >= widths[2]);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   
 
   return (
