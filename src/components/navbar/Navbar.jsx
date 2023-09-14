@@ -72,7 +72,7 @@ const Navbar = () => {
         direction="row"
         alignItems="center"
         justifyContent="right"
-        sx={{ width: '20%', marginRight: '1%' }}
+        sx={{ width: '20%'}}
       >
         <IconButton href="mailto:laura.golec@gmail.com" sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
           <EmailIcon sx={{ fontSize: 45 }} />
@@ -113,9 +113,9 @@ const Navbar = () => {
         <Box
           sx={{
             width: '70vw',
-            height: '100%',
             backgroundColor: 'var(--secondary)',
-            display: 'flexbox'
+            display: 'flexbox',
+            height: '100vh'
           }}
         >
           <Stack

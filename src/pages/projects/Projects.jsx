@@ -5,9 +5,9 @@ import { Typography } from '@mui/material';
 
 const Projects = () => {
   return (
-      <div style={{display: 'flex', flexDirection: 'row', paddingBottom: '3.5vh', position: 'relative', overflow: 'clip', backgroundColor: 'var(--mainbg)'}}>
+      <div style={{display: 'flex', flexDirection: 'row', position: 'relative', overflow: 'clip', backgroundColor: 'var(--mainbg)'}}>
       <Contents/>
-      <div paddingBottom= '5vh' marginBottom='5vh'>
+      <div paddingbottom= '5vh' marginbottom='5vh'>
       <Typography variant='h2' padding='1vw' color='var(--accent)'>
               Projects
       </Typography>
