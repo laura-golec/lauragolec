@@ -139,7 +139,7 @@ function Home() {
                   fontSize: '2.5vw',
                   zIndex: '1',
                   color: 'black',
-                  top: '25%',
+                  top: '20%',
                   left: '40%'
                 }}>
                   I am a Computer <br />
@@ -151,7 +151,7 @@ function Home() {
                   fontSize: '1.75vw',
                   zIndex: '1',
                   color: 'black',
-                  top: '40%',
+                  top: '35%',
                   left: '40%'
                 }}>
                   Currently looking for <br />

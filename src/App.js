@@ -21,7 +21,7 @@ function App() {
         }}
       >
         <Navbar />
-        <Box sx={{overflowY: 'scroll'}}>
+        <Box sx={{overflowY: 'scroll', marginTop:'5vh'}}>
           <Outlet/>
         </Box>
         <Footer />
