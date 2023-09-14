@@ -15,11 +15,11 @@ ul{
     padding-inline-start: 0;
 }
 
-.css-6hp17o-MuiList-root-MuiMenu-list{
+.MuiMenu-list{
     padding: 0!important;
     border-radius: 3vh!important;
 }
 
-.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+.MuiMenu-paper {
     border-radius: 1vh!important;
 }
