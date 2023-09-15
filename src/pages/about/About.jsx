@@ -160,6 +160,10 @@ function About() {
                         <br/>
                         MySQL
                         <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
                     </Typography>
                 </div>
             </div>
