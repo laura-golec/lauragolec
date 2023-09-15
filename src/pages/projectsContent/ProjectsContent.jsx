@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom'
 import './ProjectsContent.css';
 
 import Homefull from "./images/home-full.png";
@@ -29,50 +30,39 @@ function ProjectsContent() {
             Personal Website
           </Typography>
           <Typography var="body1" sx={{ display: 'grid', justifyContent: 'center' }}>
-            The project I am most proud of is this personal website. It allowed me to apply my knowledge in Javascript, React, and modern web development standards. It also allowed me to have full creative control over it as it was a personal project.
-            <br />
+            At the start of my 4th year of Computer Science, I decided to create this website to act as a portfolio for my work. It has allowed me to improve my visibility, and improve my communication skills. I am very proud of this project. It allowed me to apply my knowledge in Javascript, React, and modern web development standards. It was incredible to have full creative control, which I had never had before, given it was a personal project.            <br />
             <div className="imagesContainer">
               <img src={Homefull} />
               <img src={Homemobile} />
             </div>
             <br />
-            The main component of this project that I am proud of is its responsiveness. I have taken great care to include a responsive design that changes the layout based on the browser window width. This allows the website to be easily accessible regardless of the device it is being rendered on.
-            <br />
+            I am most proud of this website's responsiveness. I have taken great care to include a responsive design that changes the layout based on the browser window width. This allows the website to be easily accessible regardless of the device it is being rendered on.             <br />
             <div className="imagesContainer">
               <img src={Homefull} />
               <img src={Aboutme} />
             </div>
             <br />
-            Another component that was important to me was the multiple animations used throughout the website. I opted to use css animations as opposed to uploading gifs as this allows me to scale down the size of my application. It also allows me to randomise the animations to make the experience of using the website feel fresh every time it is visited.
-          </Typography>
+            The multiple animations used throughout the website were important to me and a great learning experience. I opted to use css animations as opposed to uploading gifs as this allows me to scale down the size of my application. It also allowed me to randomise the animations to make the experience of using the website feel fresh every time it is visited.          </Typography>
         </div>
 
         <br /><br />
 
         <div id="heading2" className="projectContainer">
-          <Typography variant="h3" alignSelf='start'>
-            Ingreader
-          </Typography>
+          <a href='https://github.com/morawi/IngReader' alignSelf='start' display='flex'>
+            <Typography variant="h3" alignSelf='start' color='var(--text)'>
+              Ingreader
+            </Typography>
+          </a>
           <Typography var="body1" sx={{ display: 'grid', justifyContent: 'center', direction: 'column' }}>
-            A major project that allowed me to develop my leadership and collaboration skills was the Ingreader app that I made in collaboration with my teammates and University of Aveiro (Universidade de Aveiro). It is a mobile application that allows the user to take a photo of an ingredients label and be told information about each ingredient on the label. It could be used for allergen detection or for health conscious individuals that want to avoid certain ingredients.
-            <br />
+            I was a co-team leader, product owner, and frontend team lead for a team of 10 people in 2023. We collaborated with University of Aveiro (Universidade de Aveiro).  We created a mobile application that allows the user to take a photo of an ingredients label, and be told information about each ingredient on the label. It could be used for allergen detection or for health conscious individuals that want to avoid certain ingredients. This project allowed me to develop my leadership and collaboration skills.            <br />
 
             <div className="imagesContainer">
-              <img src={Ingreaderscreenone} />
-              <img src={Ingreaderscreentwo} />
+              <img src={Ingreaderscreenone} style={{ maxWidth: 'calc(33% - 5vw)' }} />
+              <img src={Ingreaderscreentwo} style={{ maxWidth: 'calc(33% - 5vw)' }} />
+              <img src={Ingreaderfigma} style={{ maxWidth: 'calc(33% - 5vw)' }} />
             </div>
-
             <br />
-            I was a product owner, a team co-leader, and a frontend team leader. This greatly developed both my leadership and collaboration skills. It also developed my programming skills as we were working with technologies I had never used before, including Google Vision. The framework we used for this project was React Native, which boosted my confidence in working with Javascript and React.
-
-            <br />
-            <div className="imagesContainer">
-              <img src={Ingreaderfigma} style={{ width: '40vw', height: '100%' }} />
-            </div>
-
-            <br />
-            This was also the first project where I was required to create a UI mockup using the software Figma. This allowed our team to develop the frontend quicker as we had a prototype to work off of.
-          </Typography>
+            This project also developed my programming skills - we were working with technologies I had never used before, including Google Vision. The framework we used for this project was React Native, which boosted my confidence in working with Javascript and React. I took the lead on UI design, and created a mockup using Figma.  This allowed our team to develop the frontend quicker as we had a prototype to work from.           </Typography>
         </div>
 
         <br /><br />
@@ -82,14 +72,13 @@ function ProjectsContent() {
           </Typography>
           <Typography var="body1" sx={{ display: 'grid', justifyContent: 'center', direction: 'column' }}>
 
-            An earlier project that began my experience with frontend development was the collaborative web-app titled “Captionboard”. This was a web-app developed under the mentorship of ADAPT. Its intended purpose was to provide a platform for collaboration in captioning images for commercial purposes such as advertisements. It would allow certain users to upload images they need captions for along with a general blurb and theme of what they would like to convey with the captions. Freelancers would then be shown these requests and provide captions for review.
-            <br />
+            My experience with frontend development started in this project - a collaboratively developed web-app titled “Captionboard”. This was a web-app developed under the mentorship of ADAPT (link, idk what that is).This web-app provided a platform for collaboration in captioning images for commercial purposes (i.e. advertisements). It would allow admin users to upload images they need captions for. They would also include a general blurb and theme of what they would like to convey with the captions. Freelancers would then be shown these requests and provide captions for review.            <br />
             <div className="imagesContainer">
               <img src={CaptionBoardscreenone} />
               <img src={CaptionBoardscreentwo} />
             </div>
             <br />
-            As a junior member of the team, I was in charge of designing and implementing the frontend ui for multiple pages of the web-app. I implemented this using Vue.js. My work was overseen by a senior frontend lead, which gave me the opportunity to develop the individual research skills along with a knowledge of when to ask for help.
+            As a junior member of the team, I was in charge of designing and implementing the frontend UI for multiple pages of the web-app. I implemented this using Vue.js. My work was overseen by a senior frontend lead, which gave me the opportunity to develop the individual research skills along with a knowledge of when to ask for help.
           </Typography>
         </div>
 
@@ -100,13 +89,12 @@ function ProjectsContent() {
           </Typography>
           <Typography var="body1" sx={{ display: 'grid', justifyContent: 'center', direction: 'column' }}>
 
-            The current project I am working on in my spare time is called “Tuneify”. It is an alternative client to Spotify which utilises their API to allow users to have a more customised experience in terms of UI while providing the same access to music and podcast libraries.
-            <br />
+          I am working on in this project in my spare time. It is called “Tuneify” - an alternative client to Spotify. It will utilise Spotify's API, and allow users to have a more customised experience in terms of UI while providing the same access to music and podcast libraries.            <br />
             <div className="imagesContainer">
               <img src={Tuneifyfigma} style={{ width: '40vw', height: '100%' }} />
             </div>
             <br />
-            It is a work in progress, however I am planning on creating it using the React Native framework. I have some designs created on Figma, as pictured above.
+            I am planning on creating the app using the React Native framework. I have some designs created on Figma, as pictured above.
           </Typography>
         </div>
 
@@ -122,7 +110,7 @@ function ProjectsContent() {
               <img src={UDPgraphic} style={{ width: '40vw', height: '100%' }} />
             </div>
             <br />
-            This gave me a deeper appreciation for network transfers and allowed me to understand what is happening at a base level when transferring files. It also gave me experience in using Docker and Wireshark.
+            This gave me a deeper appreciation for network transfers and allowed me to understand what is happening at a base level when transferring files. It also gave me experience in using Docker and Wireshark. I submitted a report on this project, where I outlined my design choices, and reflected on what I could improve if I approached this project again.
           </Typography>
         </div>
 
