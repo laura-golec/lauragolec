@@ -144,6 +144,8 @@ function About() {
                     <Typography variant='body1' sx={{ borderBottom: 'solid 1px var(--fadedcolour)', fontWeight: '500', marginBottom:'5vh' }}>
                         React
                         <br />
+                        Figma 
+                        <br/>
                         Vue.js
                         <br />
                         Github
@@ -159,6 +161,7 @@ function About() {
                     </Typography>
                 </div>
             </div>
+            <br/><br/>
         </div>
     )
 }

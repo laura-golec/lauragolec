@@ -1,5 +1,40 @@
-.projects-content{
-    padding: 50px;
-    margin: 50px;
+.projects-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center the entire content horizontally */
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 80vw;
+    max-height: 40vh;
+    overflow: hidden;
+    justify-self: center;
+    gap: 5vw;
+}
+
+.imagesContainer div{
+    display:flex;
+}
+.imagesContainer img {
+    max-width: calc(50% - 2.5vw);
+    /* 50% width with 5vw gap */
+    max-height: 100%;
+    object-fit: contain;
+    /* Maintain aspect ratio and fit within the container */
+}
+
+.projectContainer {
+    border-bottom: solid 1px var(--fadedcolour);
+    margin-bottom: 1vh;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center the content horizontally within each project container */
 }
