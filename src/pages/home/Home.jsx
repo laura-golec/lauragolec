@@ -17,7 +17,7 @@ const getRandomPosition = () => {
   return { x: randomX, y: randomY };
 };
 
-var widths = [0, 1400];
+var widths = [0, 700];
 
 function Home() {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
