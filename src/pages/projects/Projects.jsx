@@ -4,7 +4,6 @@ import { ProjectsContent } from '../';
 import { Typography } from '@mui/material';
 import StickyBox from 'react-sticky-box';
 
-var widths = [0, 700];
 
 const Projects = () => {
 

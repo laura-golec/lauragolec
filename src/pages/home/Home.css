@@ -156,3 +156,17 @@
       transform: translate3d(85px, 0, 0);
   }
 }
+
+.check{
+  opacity: 0;
+  animation: ease 3s 3s forwards fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
