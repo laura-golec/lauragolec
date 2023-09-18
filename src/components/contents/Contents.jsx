@@ -45,10 +45,10 @@ const Contents = () => {
     }
   }, [hash, headings])
 
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > window.innerHeight);
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[1]);
+    setIsWideScreen(window.innerWidth > window.innerHeight);
   };
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const Contents = () => {
   };
 
   const renderWideScreenContents = () => (
-    <Box sx={{ padding: '3vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', }}>
+    <Box sx={{ padding: '8vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', }}>
       <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='1vh' padding='0 1vw'>List of Projects</Typography>
       <ul justifycontent='center' aligntext='center'>
         {headings.map((heading) => (
@@ -108,7 +108,7 @@ const Contents = () => {
           padding: '0'
         }}
       >
-        <Box sx={{ padding: '2vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', borderRadius:'1vh'}}>
+        <Box sx={{ padding: '0vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', borderRadius:'1vh'}}>
           <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='2.5vh' padding='0 1vw'>List of Projects</Typography>
           <ul justifycontent='left' aligntext='left'>
             {headings.map((heading) => (

@@ -20,7 +20,7 @@ import Transfergraphic from "./images/transfer-graphic.png";
 
 function ProjectsContent() {
   return (
-    <Box sx={{ padding: '2vw 1vw', color: 'var(--text)', backgroundColor: 'var(--mainbg)', display: 'flex' }} className="projects-content">
+    <Box sx={{ padding: '2vh 1vw', color: 'var(--text)', backgroundColor: 'var(--mainbg)', display: 'flex' }} className="projects-content">
       <div>
 
       </div>

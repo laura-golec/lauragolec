@@ -45,22 +45,22 @@ function Home() {
 
       return (
         <div className="home-container" scroll='no' style={{ maxWidth: '1980px', }}>
+          <div className="seventy-percent">
           <div className='check'>
-          <img src={Arrow} style={{width: '3vw', top:'1vh', position:'absolute', left:'3.5vw',}}/>
+          <img src={Arrow} style={{width: '3vw', top:'10%', position:'absolute', left:'3.5vw',}}/>
             <Typography sx={{
                 fontWeight: '600',
                 fontSize: '2vh',
                 color: 'var(--fadedcolour)',
                 left: '7vw',
                 textAlign: 'left',
-                top: '3vh',
+                top: '15%',
                 position: 'absolute',
                 width: '15vw',
               }}>
                 Check out my work!    
             </Typography>
           </div>
-          <div className="seventy-percent">
             <Typography sx={{
               fontWeight: '800',
               position: 'absolute',
@@ -90,7 +90,8 @@ function Home() {
               zIndex: '1',
               color: 'var(--primary)',
               bottom: '5%',
-              left: '10%'
+              left: '10%',
+              width: '90vw'
             }}>
               LAURA GOLEC
             </Typography>
@@ -134,7 +135,7 @@ function Home() {
             </div>
           </div>
           <div className="thirty-percent">
-            <div className="blob-container" style={{ height: '25vw', width: '25vw', position: 'relative', top: '-7vh' }}>
+            <div className="blob-container" style={{ height: '25vw', width: '25vw', position: 'relative', top: '5%' }}>
               <Typography sx={{
                 fontWeight: '700',
                 position: 'absolute',
@@ -171,7 +172,7 @@ function Home() {
       );
     } else {
       return (
-        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: '91vh', width: '100%', overflow: 'clip', }}>
+        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: 'calc(100vh - 90px)', width: '100%', overflow: 'clip', }}>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh' }}>
             <Typography

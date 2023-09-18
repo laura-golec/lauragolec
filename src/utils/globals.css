@@ -4,18 +4,7 @@ body{
     background-color: var(--mainbg);
 }
 
-@media (max-width: 1399px) {
-  .css-1y478p {
-    margin-top: 0!important;
-  }
-}
-
-@media (min-width: 1400px) {
-  .css-1y478p {
-    margin-top: 5vh!important;
-  }
-}
-
-:root{
+.root{
   justify-content:center;
+  height: 100vh;
 }
