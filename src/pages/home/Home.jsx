@@ -20,10 +20,10 @@ const getRandomPosition = () => {
 var widths = [0, 700];
 
 function Home() {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > window.innerHeight);
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[1]);
+    setIsWideScreen(window.innerWidth > window.innerHeight);
   };
 
   useEffect(() => {
