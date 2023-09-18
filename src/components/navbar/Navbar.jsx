@@ -12,7 +12,7 @@ var widths = [0, 700];
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > window.innerHeight);
 
   const openDrawer = () => {
     setOpen(true);
@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[1]);
+    setIsWideScreen(window.innerWidth > window.innerHeight);
   };
 
   useEffect(() => {

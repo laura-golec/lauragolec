@@ -8,6 +8,8 @@ import BlobFour from './images/blobfour.png';
 import BlobFive from './images/blobfive.png';
 import BlobSix from './images/blobsix.png';
 import BlobSeven from './images/blobseven.png';
+import Arrow from './images/arrow.png';
+
 import { Box, Typography } from '@mui/material';
 
 const getRandomPosition = () => {
@@ -16,8 +18,6 @@ const getRandomPosition = () => {
 
   return { x: randomX, y: randomY };
 };
-
-var widths = [0, 700];
 
 function Home() {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > window.innerHeight);
@@ -45,6 +45,21 @@ function Home() {
 
       return (
         <div className="home-container" scroll='no' style={{ maxWidth: '1980px', }}>
+          <div className='check'>
+          <img src={Arrow} style={{width: '3vw', top:'3vh', position:'absolute', left:'3.5vw',}}/>
+            <Typography sx={{
+                fontWeight: '600',
+                fontSize: '2vh',
+                color: 'var(--fadedcolour)',
+                left: '7vw',
+                textAlign: 'left',
+                top: '5vh',
+                position: 'absolute',
+                width: '15vw',
+              }}>
+                Check out my work!    
+            </Typography>
+          </div>
           <div className="seventy-percent">
             <Typography sx={{
               fontWeight: '800',
