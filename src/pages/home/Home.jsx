@@ -44,12 +44,12 @@ function Home() {
       const blob7Position = getRandomPosition();
 
       return (
-        <div className="home-container" scroll='no' style={{ maxWidth: '1980px',}}>
+        <div className="home-container" scroll='no' style={{ maxWidth: '1980px', }}>
           <div className="seventy-percent">
             <Typography sx={{
               fontWeight: '800',
               position: 'absolute',
-              fontSize: '100px',
+              fontSize: '8vw',
               zIndex: '1',
               color: 'var(--accent)',
               top: '25%',
@@ -60,7 +60,7 @@ function Home() {
             <Typography sx={{
               fontWeight: '700',
               position: 'absolute',
-              fontSize: '100px',
+              fontSize: '7vw',
               zIndex: '1',
               color: 'var(--text)',
               top: '40%',
@@ -80,58 +80,46 @@ function Home() {
               LAURA GOLEC
             </Typography>
             <div className="blob-container">
-              <div className="blob-wrapper">
-                <img
-                  src={BlobOne}
-                  alt="Blob One"
-                  className="blob blob-1"
-                  style={{ '--x': `${blob1Position.x}%`, '--y': `${blob1Position.y}%` }}
-                />
-              </div>
-              <div className="blob-wrapper">
-                <img
-                  src={BlobTwo}
-                  alt="Blob Two"
-                  className="blob blob-2"
-                  style={{ '--x': `${blob2Position.x}%`, '--y': `${blob2Position.y}%` }}
-                />
-              </div>
-              <div className="blob-wrapper">
-                <img
-                  src={BlobThree}
-                  alt="Blob Three"
-                  className="blob blob-3"
-                  style={{ '--x': `${blob3Position.x}%`, '--y': `${blob3Position.y}%` }}
-                />
-              </div>
-              <div className="blob-wrapper">
-                <img
-                  src={BlobFour}
-                  alt="Blob Four"
-                  className="blob blob-4"
-                  style={{ '--x': `${blob4Position.x}%`, '--y': `${blob4Position.y}%` }}
-                />
-              </div>
-              <div className="blob-wrapper">
-                <img
-                  src={BlobFive}
-                  alt="Blob Five"
-                  className="blob blob-5"
-                  style={{ '--x': `${blob5Position.x}%`, '--y': `${blob5Position.y}%` }}
-                />
-              </div>
-              <div className="blob-wrapper">
-                <img
-                  src={BlobSeven}
-                  alt="Blob Seven"
-                  className="blob blob-7"
-                  style={{ '--x': `${blob7Position.x}%`, '--y': `${blob7Position.y}%` }}
-                />
-              </div>
+              <img
+                src={BlobOne}
+                alt="Blob One"
+                className="blob blob-1"
+                style={{ '--x': `${blob1Position.x}%`, '--y': `${blob1Position.y}%` }}
+              />
+              <img
+                src={BlobTwo}
+                alt="Blob Two"
+                className="blob blob-2"
+                style={{ '--x': `${blob2Position.x}%`, '--y': `${blob2Position.y}%` }}
+              />
+              <img
+                src={BlobThree}
+                alt="Blob Three"
+                className="blob blob-3"
+                style={{ '--x': `${blob3Position.x}%`, '--y': `${blob3Position.y}%` }}
+              />
+              <img
+                src={BlobFour}
+                alt="Blob Four"
+                className="blob blob-4"
+                style={{ '--x': `${blob4Position.x}%`, '--y': `${blob4Position.y}%` }}
+              />
+              <img
+                src={BlobFive}
+                alt="Blob Five"
+                className="blob blob-5"
+                style={{ '--x': `${blob5Position.x}%`, '--y': `${blob5Position.y}%` }}
+              />
+              <img
+                src={BlobSeven}
+                alt="Blob Seven"
+                className="blob blob-7"
+                style={{ '--x': `${blob7Position.x}%`, '--y': `${blob7Position.y}%` }}
+              />
             </div>
           </div>
           <div className="thirty-percent">
-            <div className="blob-container" style={{height: '25vw', width:'25vw', position:'relative', top:'-7vh'}}>
+            <div className="blob-container" style={{ height: '25vw', width: '25vw', position: 'relative', top: '-7vh' }}>
               <Typography sx={{
                 fontWeight: '700',
                 position: 'absolute',
@@ -260,16 +248,15 @@ function Home() {
             </a>
           </Box>
 
-          <div style={{ position: 'relative', display: 'flex', width: '100vw', }}>
+          <div style={{ position: 'relative', display: 'flex', width: '120vw', left: '-2vw', marginLeft:'-5vw'}}>
             {/* Green wave and rectangle*/}
-            <div style={{ position: 'absolute', height: '91vh', zIndex: '1', width: '100%' }}>
-              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'relative', height: '91vh' }}>
+            <div style={{ position: 'absolute', height: '91vh', zIndex: '1', width: '120vw', marginLeft:'-5vw'}}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'relative', height: '91vh', left: '-2vw', marginLeft:'-5vw'}}>
                 {/* Blue rectangle */}
 
                 <div
                   style={{
-                    left: '0',
-                    width: '100%',
+                    width: '120vw',
                     height: '40vh',
                     backgroundColor: 'rgba(210, 224, 239, 0.9)', // Match wave color with 0.9 alpha
                   }}
@@ -281,6 +268,8 @@ function Home() {
                     width: '100%',
                     height: '10vh',
                     display: 'inline-block',
+                    left: '-2vw',
+                    marginLeft:'-5vw'
                   }}
                 >
                   <div className="hero_area">
@@ -314,14 +303,14 @@ function Home() {
 
 
             {/* Green wave and rectangle*/}
-            <div style={{ position: 'absolute', height: '91vh', zIndex: '2', width: '100%' }}>
-              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'relative', height: '91vh' }}>
+            <div style={{ position: 'absolute', height: '91vh', zIndex: '2', width: '120vw' }}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '120vw', position: 'relative', height: '91vh' }}>
                 {/* Blue rectangle */}
 
                 <div
                   style={{
-                    left: '0',
-                    width: '100%',
+                    left: '-2vw',
+                    width: '120vw',
                     height: '5vh',
                     backgroundColor: 'rgba(65, 180, 122, 0.9)', // Match wave color with 0.9 alpha
                   }}

@@ -21,7 +21,7 @@ function App() {
         }}
       >
         <Navbar sx={{justifySelf:'left', left:'0'}}/>
-        <Box sx={{overflowY: 'scroll', marginTop:'7vh', justifyContent:'center', display:'flex', maxWidth:'1980px', width:'100vw', justifySelf:'center'}}>
+        <Box sx={{overflowY: 'scroll', marginTop:'7vh', justifyContent:'center', display:'flex', maxWidth:'1980px', width:'105vw', justifySelf:'center'}}>
           <Outlet/>
         </Box>
         <Footer />

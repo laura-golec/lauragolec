@@ -43,7 +43,7 @@ const Projects = () => {
   )
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', position: 'relative', overflow: 'clip', backgroundColor: 'var(--secondary)' }}>
+    <div style={{ display: 'flex', flexDirection: 'row', position: 'relative', overflow: 'scroll', backgroundColor: 'var(--secondary)', justifyContent:'start' }}>
       <div>
       <StickyBox>
         {isWideScreen ? renderWideScreenHeader(): undefined}
