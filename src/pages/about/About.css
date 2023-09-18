@@ -2,13 +2,15 @@
     background-color: var(--mainbg);
     display: grid;
     justify-content: center;
-    padding: 1vh 2vw;
-    margin-top: 7vh;
+    padding: 3vh 4vw 1vh 4vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-self: center;
 }
 
 .aboutContent{
     background-color: var(--mainbg);
-    height: 100vh;
+    height: fit-content;
 }
 
 .blob-containerAbout {

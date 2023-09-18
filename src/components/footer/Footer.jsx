@@ -7,8 +7,8 @@ function Footer() {
   return(
 <Box 
 sx={{ 
-  position: 'absolute',
-  bottom: '0px',
+  position: 'fixed',
+  bottom: 0,
   left: 0,
   width: '100vw',
   backgroundColor: "var(--mainbg)", 
