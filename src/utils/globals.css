@@ -15,3 +15,7 @@ body{
     margin-top: 5vh!important;
   }
 }
+
+:root{
+  justify-content:center;
+}
