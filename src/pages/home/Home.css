@@ -159,7 +159,7 @@
 
 .check{
   opacity: 0;
-  animation: ease 3s 3s forwards fadeIn;
+  animation: ease 3s 1s forwards fadeIn;
 }
 
 @keyframes fadeIn {
