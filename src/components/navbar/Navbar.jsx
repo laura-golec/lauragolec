@@ -44,9 +44,10 @@ const Navbar = () => {
         borderBottom: "solid 1px var(--brightbg)",
         width: '100%',
         zIndex: 9999,
-        height: '5vh',
+        height: '100%',
         margin: 0,
-        position: 'absolute'
+        position: 'absolute',
+        boxSizing: 'border-box'
       }}
     >
       <Stack
@@ -94,7 +95,8 @@ const Navbar = () => {
       borderBottom: "solid 1px var(--brightbg)",
       width: '100vw',
       zIndex: 9999,
-      height: '5vh'
+      height: '70px',
+      boxSizing: 'border-box'
     }}>
       <IconButton onClick={openDrawer} sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
         <MenuIcon sx={{ fontSize: 40 }} />
@@ -151,7 +153,7 @@ const Navbar = () => {
     </Stack>
   );
   return (
-    <div>
+    <div style={{height: '70px', margin: '0', padding:'0', position: 'relative',}}>
       {isWideScreen ? renderWideScreenNavbar() : renderMobileDrawer()}
     </div>
   );

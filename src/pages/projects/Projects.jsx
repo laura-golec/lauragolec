@@ -27,13 +27,13 @@ const Projects = () => {
   )
 
   const headerWide = () => (
-    <Typography variant='h2' padding='1vw' color='var(--accent)' backgroundColor='var(--mainbg)'>
+    <Typography variant='h2' padding='1vw' color='var(--accent)' backgroundColor='var(--mainbg)' marginTop='7vh'>
         Projects
       </Typography>
   )
 
   const renderMobileHeader = () => (
-    <div style={{ display: 'flex', direction: 'row', alignItems: 'center'}}>
+    <div style={{ display: 'flex', direction: 'row', alignItems: 'center',}}>
       <Contents />
       <Typography variant='h2' padding='1vw' color='var(--accent)' backgroundcolor='var(--mainbg)'>
         Projects
@@ -51,7 +51,7 @@ const Projects = () => {
         {isWideScreen ? headerWide(): renderMobileHeader()}
         </div>
         
-        <ProjectsContent style={{ paddingBottom: '5vh', backgroundcolor: 'var(--mainbg)' }} />
+        <ProjectsContent style={{ marginBottom: '2vh',paddingBottom: '6vh', backgroundcolor: 'var(--mainbg)' }} />
       </div>
     </div>
   );

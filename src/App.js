@@ -1,6 +1,6 @@
 import React from "react";
 import { Home, Projects, About, Contact } from './pages';
-import { Navbar, Footer} from "./components";
+import { Navbar, Footer } from "./components";
 import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import './utils/globals.css';
@@ -12,23 +12,25 @@ function App() {
       <Box
         sx={{
           backgroundColor: 'var(--mainbg)',
-          display: 'grid',
+          display: 'block',
           direction: 'column',
-          height: '99vh',
-          width: '100vw',
-          overflowY: 'scroll',
+          height: '100%',
+          width: '100%',
           overflowX: 'hidden',
+          position: 'relative',
+          boxSizing: 'border-box',
+          margin: '0',
         }}
       >
-        <Navbar sx={{justifySelf:'left', left:'0'}}/>
-        <Box sx={{overflowY: 'scroll', marginTop:'7vh', justifyContent:'center', display:'flex', maxWidth:'1980px', width:'105vw', justifySelf:'center'}}>
-          <Outlet/>
+        <Navbar sx={{ left: '0' }} />
+        <Box sx={{ overflowY: 'scroll', justifyContent: 'center', display: 'flex', maxWidth: '1980px', width: '105vw', justifySelf: 'center', boxSizing: 'border-box', }}>
+          <Outlet />
         </Box>
         <Footer />
       </Box>
     );
   };
-  
+
 
   const router = createHashRouter([
     {
@@ -54,23 +56,23 @@ function App() {
   const theme = createTheme({
     typography: {
       fontFamily: ['Lato'],
-      h1:{
+      h1: {
         fontFamily: ['Lato'],
         fontWeight: 800,
       },
-      h2:{
+      h2: {
         fontFamily: ['Lato'],
         fontWeight: 800,
       },
-      h3:{
+      h3: {
         fontFamily: ['Lato'],
         fontWeight: 700,
       },
-      h4:{
+      h4: {
         fontFamily: ['Lato'],
         fontWeight: 700,
       },
-      body1:{
+      body1: {
         fontFamily: ['Lato'],
         fontWeight: 500,
       },
@@ -79,7 +81,7 @@ function App() {
       MuiCssBaseline: {
         styleOverrides: {
           html: [
-            {'@font-face': 'Lato'},
+            { '@font-face': 'Lato' },
           ],
         }
       },
