@@ -46,14 +46,14 @@ function Home() {
       return (
         <div className="home-container" scroll='no' style={{ maxWidth: '1980px', }}>
           <div className='check'>
-          <img src={Arrow} style={{width: '3vw', top:'3vh', position:'absolute', left:'3.5vw',}}/>
+          <img src={Arrow} style={{width: '3vw', top:'1vh', position:'absolute', left:'3.5vw',}}/>
             <Typography sx={{
                 fontWeight: '600',
                 fontSize: '2vh',
                 color: 'var(--fadedcolour)',
                 left: '7vw',
                 textAlign: 'left',
-                top: '5vh',
+                top: '3vh',
                 position: 'absolute',
                 width: '15vw',
               }}>
