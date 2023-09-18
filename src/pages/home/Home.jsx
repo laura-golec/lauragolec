@@ -23,7 +23,7 @@ function Home() {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[2]);
+    setIsWideScreen(window.innerWidth >= widths[1]);
   };
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Home() {
       const blob7Position = getRandomPosition();
 
       return (
-        <div className="home-container" style={{overflow:'clip'}}>
+        <div className="home-container" scroll='no' style={{ maxWidth: '1980px',}}>
           <div className="seventy-percent">
             <Typography sx={{
               fontWeight: '800',
@@ -71,10 +71,10 @@ function Home() {
             <Typography sx={{
               fontWeight: '900',
               position: 'absolute',
-              fontSize: '12vw',
+              fontSize: '10vw',
               zIndex: '1',
               color: 'var(--primary)',
-              top: '65%',
+              bottom: '5%',
               left: '10%'
             }}>
               LAURA GOLEC
@@ -131,48 +131,46 @@ function Home() {
             </div>
           </div>
           <div className="thirty-percent">
-            <div className="blob-container">
-              <div className="blob-wrapper">
-                <Typography sx={{
-                  fontWeight: '700',
-                  position: 'absolute',
-                  fontSize: '2.5vw',
-                  zIndex: '1',
-                  color: 'black',
-                  top: '20%',
-                  left: '40%'
-                }}>
-                  I am a Computer <br />
-                  Science student
-                </Typography>
-                <Typography sx={{
-                  fontWeight: '400',
-                  position: 'absolute',
-                  fontSize: '1.75vw',
-                  zIndex: '1',
-                  color: 'black',
-                  top: '35%',
-                  left: '40%'
-                }}>
-                  Currently looking for <br />
-                  an internship
-                </Typography>
-                <img
-                  src={BlobSix}
-                  alt="Blob Six"
-                  className="blob blob-6"
-                  style={{ '--x': `${blob6Position.x}%`, '--y': `${blob6Position.y}%` }}
-                />
-              </div>
+            <div className="blob-container" style={{height: '25vw', width:'25vw', position:'relative', top:'-7vh'}}>
+              <Typography sx={{
+                fontWeight: '700',
+                position: 'absolute',
+                fontSize: '2.5vw',
+                zIndex: '1',
+                color: 'black',
+                top: '22%',
+                left: '20%'
+              }}>
+                I am a Computer <br />
+                Science student
+              </Typography>
+              <Typography sx={{
+                fontWeight: '400',
+                position: 'absolute',
+                fontSize: '1.75vw',
+                zIndex: '1',
+                color: 'black',
+                top: '55%',
+                left: '20%'
+              }}>
+                Currently looking for <br />
+                an internship
+              </Typography>
+              <img
+                src={BlobSix}
+                alt="Blob Six"
+                className="blob blob-6"
+                style={{ '--x': `${blob6Position.x}%`, '--y': `${blob6Position.y}%` }}
+              />
             </div>
           </div>
         </div>
       );
     } else {
       return (
-        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: '91vh', width: '100%', overflow: 'clip',}}>
+        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: '91vh', width: '100%', overflow: 'clip', }}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height:'91vh', top: '7vh' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh' }}>
             <Typography
               sx={{
                 fontWeight: '700',
@@ -244,27 +242,28 @@ function Home() {
               I am Computer Science student <br />
               currently looking for an internship
             </Typography>
-
-            <Typography
-              sx={{
-                fontWeight: '600',
-                fontSize: '2vh',
-                color: 'var(--fadedcolour)',
-                left: '-4vw',
-                textAlign: 'right',
-                position: 'absolute',
-                bottom: '10vh',
-                width: '100vw'
-              }}
-            >
-              Check out my work!
-            </Typography>
+            <a href='#/projects' zIndex='30'>
+              <Typography
+                sx={{
+                  fontWeight: '600',
+                  fontSize: '2vh',
+                  color: 'var(--fadedcolour)',
+                  left: '-4vw',
+                  textAlign: 'right',
+                  position: 'absolute',
+                  bottom: '10vh',
+                  width: '100vw'
+                }}
+              >
+                Check out my work!
+              </Typography>
+            </a>
           </Box>
 
           <div style={{ position: 'relative', display: 'flex', width: '100vw', }}>
             {/* Green wave and rectangle*/}
             <div style={{ position: 'absolute', height: '91vh', zIndex: '1', width: '100%' }}>
-              <div style={{display: 'flex', flexDirection: 'column-reverse', width: '100%', position:'relative', height: '91vh' }}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'relative', height: '91vh' }}>
                 {/* Blue rectangle */}
 
                 <div
@@ -275,7 +274,7 @@ function Home() {
                     backgroundColor: 'rgba(210, 224, 239, 0.9)', // Match wave color with 0.9 alpha
                   }}
                 ></div>
-                
+
                 {/* Green wave */}
                 <div
                   style={{
@@ -316,7 +315,7 @@ function Home() {
 
             {/* Green wave and rectangle*/}
             <div style={{ position: 'absolute', height: '91vh', zIndex: '2', width: '100%' }}>
-              <div style={{display: 'flex', flexDirection: 'column-reverse', width: '100%', position:'relative', height: '91vh' }}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'relative', height: '91vh' }}>
                 {/* Blue rectangle */}
 
                 <div
@@ -327,7 +326,7 @@ function Home() {
                     backgroundColor: 'rgba(65, 180, 122, 0.9)', // Match wave color with 0.9 alpha
                   }}
                 ></div>
-                
+
                 {/* Green wave */}
                 <div
                   style={{

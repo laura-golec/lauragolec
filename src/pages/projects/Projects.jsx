@@ -11,7 +11,7 @@ const Projects = () => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[2]);
+    setIsWideScreen(window.innerWidth >= widths[1]);
   };
 
   useEffect(() => {

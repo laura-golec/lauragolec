@@ -1,23 +1,30 @@
 .home-container {
   display: flex;
-  height: 99vh;
+  height: 93vh;
   position: relative;
-  padding-top: -10vh;
-  margin-top: -8vh;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
 }
 
 .seventy-percent {
   flex: 6;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -10vh;
 }
 
 .thirty-percent {
   flex: 4;
+  width: 40%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  margin-top: 10vh;
 }
 
 .blob-container {
@@ -38,7 +45,7 @@
 
 .blob-2 {
   left: 5%;
-  top: 40%;
+  top: 25%;
   width: 30vw;
 }
 
@@ -61,9 +68,9 @@
 }
 
 .blob-6 {
-  left: 9%;
-  top: -3%;
-  width: 100%;
+  left: 0%;
+  top: 0%;
+  width: 25vw;
 }
 
 .blob-7 {

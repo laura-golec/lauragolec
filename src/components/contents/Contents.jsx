@@ -7,7 +7,7 @@ import { ExpandMore } from '@mui/icons-material';
 import Fade from '@mui/material/Fade';
 
 
-var widths = [0, 1400];
+var widths = [0, 700];
 
 const Contents = () => {
   const [headings, setHeadings] = useState([]);
@@ -48,7 +48,7 @@ const Contents = () => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[2]);
+    setIsWideScreen(window.innerWidth >= widths[1]);
   };
 
   useEffect(() => {
@@ -70,7 +70,7 @@ const Contents = () => {
 
   const renderWideScreenContents = () => (
     <Box sx={{ padding: '3vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', }}>
-      <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='1vh' padding='0 1vw'>Contents</Typography>
+      <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='1vh' padding='0 1vw'>List of Projects</Typography>
       <ul justifycontent='center' aligntext='center'>
         {headings.map((heading) => (
           <li key={heading.id} onClick={() => scrollToHeading(`#${heading.id}`)}>
@@ -109,7 +109,7 @@ const Contents = () => {
         }}
       >
         <Box sx={{ padding: '2vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', borderRadius:'1vh'}}>
-          <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='2.5vh' padding='0 1vw'>Contents</Typography>
+          <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='2.5vh' padding='0 1vw'>List of Projects</Typography>
           <ul justifycontent='left' aligntext='left'>
             {headings.map((heading) => (
               <li key={heading.id} onClick={() => scrollToHeading(`#${heading.id}`)}>

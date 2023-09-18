@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import MenuIcon from '@mui/icons-material/Menu';
 
-var widths = [0, 1400];
+var widths = [0, 700];
 
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[2]);
+    setIsWideScreen(window.innerWidth >= widths[1]);
   };
 
   useEffect(() => {
@@ -98,6 +98,7 @@ const Navbar = () => {
     }}>
       <IconButton onClick={openDrawer} sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
         <MenuIcon sx={{ fontSize: 40 }} />
+        <Typography sx={{ paddingLeft: '1vw',fontSize: 25, fontWeight: 'bold' }}>Menu</Typography>
       </IconButton>
       <Drawer
         variant='temporary'

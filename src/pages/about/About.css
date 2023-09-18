@@ -1,20 +1,9 @@
-@media (min-width: 1400px) {
-    .about {
-        margin-top: 2vh!important;
-    }
-}
-
-@media (max-width: 1400px) {
-    .about{
-        margin-top: 0vh!important;
-    }
-}
-
 .about{
     background-color: var(--mainbg);
     display: grid;
     justify-content: center;
     padding: 1vh 2vw;
+    margin-top: 7vh;
 }
 
 .aboutContent{
