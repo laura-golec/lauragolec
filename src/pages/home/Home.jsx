@@ -47,14 +47,14 @@ function Home() {
         <div className="home-container" scroll='no' style={{ maxWidth: '1980px', }}>
           <div className="seventy-percent">
           <div className='check'>
-          <img src={Arrow} style={{width: '3vw', top:'10%', position:'absolute', left:'3.5vw',}}/>
+          <img src={Arrow} style={{width: '40px', top:'0%', position:'absolute',}}/>
             <Typography sx={{
                 fontWeight: '600',
                 fontSize: '2vh',
                 color: 'var(--fadedcolour)',
-                left: '7vw',
+                left: '45px',
                 textAlign: 'left',
-                top: '15%',
+                top: '30%',
                 position: 'absolute',
                 width: '15vw',
               }}>

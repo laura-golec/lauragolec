@@ -166,8 +166,9 @@
 .check{
   position: relative;
   height: 5vh;
-  left: 5vw;
-  top: 5vh;
+  width: 5vw;
+  left: 100px;
+  top: 1vh;
   opacity: 0;
   animation: ease 3s 1s forwards fadeIn;
 }
