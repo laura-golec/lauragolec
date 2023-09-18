@@ -52,7 +52,7 @@ function About() {
     )
 
     return (
-        <div className='about' justifyContent='center' paddingBottom='10vh' marginTop='7vh'>
+        <div className='about' justifyContent='center' marginTop='2vh' height='calc(100vh - 90px)' boxSizing='border-box'>
             <div style={{ display: 'flex', alignContent: 'center', justifyContent: 'center', flexDirection: 'column', justifySelf: 'center!important',}}>
                 <Profile />
                 <Typography variant='h3' sx={{ backgroundColor: 'var(--mainbg)', color: 'var(--accent)', paddingTop: '2vh', textAlign: 'center' }}>
@@ -60,7 +60,7 @@ function About() {
                 </Typography>
             </div>
 
-            <div className='aboutContent' style={{ maxWidth: '800px' }}>
+            <div className='aboutContent' style={{ maxWidth: '800px'}}>
                 <Typography variant='body1' >
                     Hi, I am Laura Golec! I am a 4th year student in Trinity College Dublin, in the Computer Science Masters Programme. I am currently seeking a 6-8 month software engineering internship at the beginning of 2024 as part of my course.
                     <br />
@@ -158,11 +158,9 @@ function About() {
                         <br/>
                         MySQL
                         <br/>
-                        <br/>
                     </Typography>
                 </div>
             </div>
-            <br/><br/>
         </div>
     )
 }

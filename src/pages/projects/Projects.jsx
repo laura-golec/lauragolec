@@ -27,7 +27,7 @@ const Projects = () => {
   )
 
   const headerWide = () => (
-    <Typography variant='h2' padding='1vw' color='var(--accent)' backgroundColor='var(--mainbg)' marginTop='7vh'>
+    <Typography variant='h2' padding='1vw' color='var(--accent)' backgroundColor='var(--mainbg)'>
         Projects
       </Typography>
   )
