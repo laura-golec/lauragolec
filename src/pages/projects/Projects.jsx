@@ -8,10 +8,10 @@ var widths = [0, 700];
 
 const Projects = () => {
 
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= widths[1]);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > window.innerHeight);
 
   const handleResize = () => {
-    setIsWideScreen(window.innerWidth >= widths[1]);
+    setIsWideScreen(window.innerWidth > window.innerHeight);
   };
 
   useEffect(() => {
@@ -44,11 +44,9 @@ const Projects = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', position: 'relative', overflow: 'scroll', backgroundColor: 'var(--secondary)', justifyContent:'start' }}>
-      <div>
       <StickyBox>
         {isWideScreen ? renderWideScreenHeader(): undefined}
         </StickyBox>
-      </div>
       <div paddingbottom='5vh' marginbottom='5vh' backgroundcolor='var(--mainbg)'>
         <div>
         {isWideScreen ? headerWide(): renderMobileHeader()}
