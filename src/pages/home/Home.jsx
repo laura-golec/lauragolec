@@ -284,7 +284,7 @@ function Home() {
                     width: '100%',
                     height: '10%',
                     display: 'inline-block',
-                    paddingBottom: '2%'
+                    paddingBottom: '23px'
                   }}
                 >
                   <div className="hero_area">
@@ -336,7 +336,7 @@ function Home() {
                   style={{
                     width: '100%',
                     height: '10%',
-                    paddingBottom: '0.7%',
+                    paddingBottom: '9px',
                     display: 'inline-block',
                   }}
                 >
