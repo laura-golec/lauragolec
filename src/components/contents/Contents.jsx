@@ -15,7 +15,7 @@ const Contents = () => {
 
   useEffect(() => {
     // Get all the headings (h2 and h3) within the second flexbox
-    const headingElements = document.querySelectorAll('.projects-content div:nth-child(2) h2, .projects-content div:nth-child(2) h3');
+    const headingElements = document.querySelectorAll('.projects-content div:nth-child(1) h2, .projects-content div:nth-child(1) h3');
 
     // Create an array of objects with the heading text and their IDs
     const headingsArray = Array.from(headingElements).map((heading, index) => ({
