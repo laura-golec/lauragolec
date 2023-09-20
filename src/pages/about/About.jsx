@@ -108,7 +108,7 @@ function About() {
                 <Typography variant='h5' sx={{ borderBottom: 'double 2px var(--fadedcolour)' }}>
                     Skills
                 </Typography>
-                <div style={{ margin: '0 1vw' }}>
+                <div style={{ margin: '0 1vw 10vh 1vw' }}>
                     <Typography variant='h6' sx={{ width: 'fit-content', fontWeight: '600' }}>
                         Languages
                     </Typography>

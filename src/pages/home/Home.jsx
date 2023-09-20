@@ -44,7 +44,7 @@ function Home() {
       const blob7Position = getRandomPosition();
 
       return (
-        <div className="home-container" scroll='no' style={{ maxWidth: '1980px', }}>
+        <div className="home-container" style={{ maxWidth: '1980px', }}>
           <div className="seventy-percent">
           <div className='check'>
           <img src={Arrow} style={{width: '40px', top:'0%', position:'absolute',}}/>
@@ -172,9 +172,9 @@ function Home() {
       );
     } else {
       return (
-        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: 'calc(100% - 90px)', width: '100%', overflow: 'clip', }}>
+        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: 'calc(100% - 90px)', width: '100%', overflow: 'clip'}}>
 
-          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height:'100%' }}>
             <Typography
               sx={{
                 fontWeight: '700',
@@ -264,16 +264,17 @@ function Home() {
             </a>
           </Box>
 
-          <div style={{ position: 'relative', display: 'flex', width: '120vw', left: '-2vw', marginLeft:'-5vw'}}>
+          <div style={{ position: 'relative', display: 'flex', width: '100vw'}}>
             {/* Green wave and rectangle*/}
-            <div style={{ position: 'absolute', height: '100%', width: '120vw', marginLeft:'-5vw'}}>
-              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'relative', height: '91vh', left: '-2vw', marginLeft:'-5vw'}}>
+            <div style={{ position: 'absolute', height: '100%', width: '100vw', bottom: '0'}}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'absolute', bottom: '0'}}>
                 {/* Blue rectangle */}
 
                 <div
                   style={{
-                    width: '120vw',
+                    width: '100vw',
                     height: '40vh',
+                    bottom: '0',
                     backgroundColor: 'rgba(210, 224, 239, 0.9)', // Match wave color with 0.9 alpha
                   }}
                 ></div>
@@ -284,8 +285,6 @@ function Home() {
                     width: '100%',
                     height: '10vh',
                     display: 'inline-block',
-                    left: '-2vw',
-                    marginLeft:'-5vw'
                   }}
                 >
                   <div className="hero_area">
@@ -319,8 +318,8 @@ function Home() {
 
 
             {/* Green wave and rectangle*/}
-            <div style={{ position: 'absolute', height: '91vh', zIndex: '2', width: '120vw' }}>
-              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '120vw', position: 'relative', height: '91vh' }}>
+            <div style={{ position: 'absolute', height: '100%', zIndex: '2', width: '120vw' }}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '120vw', position: 'relative', height: '100%' }}>
                 {/* Blue rectangle */}
 
                 <div
