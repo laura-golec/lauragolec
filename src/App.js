@@ -23,7 +23,7 @@ function App() {
         }}
       >
         <Navbar sx={{ left: '0' }} />
-        <Box sx={{ overflowY: 'scroll', justifyContent: 'center', display: 'flex', maxWidth: '1980px', width: '100vw', justifySelf: 'center', boxSizing: 'border-box', overflow: 'scroll'}}>
+        <Box sx={{ overflowY: 'scroll', justifyContent: 'center', display: 'flex', maxWidth: '2048px', width: '100vw', justifySelf: 'center', boxSizing: 'border-box', overflow: 'scroll', height: '100%'}}>
           <Outlet />
         </Box>
         <Footer />

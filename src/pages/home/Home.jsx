@@ -172,7 +172,7 @@ function Home() {
       );
     } else {
       return (
-        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: 'calc(100vh - 90px)', width: '100%', overflow: 'clip', }}>
+        <Box sx={{ display: 'flex', position: 'relative', marginBottom: 0, height: 'calc(100% - 90px)', width: '100%', overflow: 'clip', }}>
 
           <Box sx={{ display: 'flex', flexDirection: 'column', zIndex: '5', position: 'absolute', height: '91vh' }}>
             <Typography
