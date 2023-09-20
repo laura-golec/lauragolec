@@ -181,7 +181,7 @@ function Home() {
                 fontSize: '15vw',
                 color: 'var(--accent)',
                 zIndex: '3',
-                bottom: '72vh',
+                bottom: '72%',
                 left: '4vw',
                 position: 'absolute',
               }}
@@ -193,7 +193,7 @@ function Home() {
                 fontWeight: '600',
                 fontSize: '6vh',
                 color: 'var(--text)',
-                bottom: '65vh',
+                bottom: '65%',
                 textAlign: 'center',
                 position: 'absolute',
                 width: '70vw',
@@ -208,7 +208,7 @@ function Home() {
                 fontSize: '20vw',
                 color: 'var(--primary)',
                 margin: '0',
-                bottom: '42vh',
+                bottom: '42%',
                 position: 'absolute',
                 width: '100vw',
                 left: '4vw'
@@ -221,9 +221,9 @@ function Home() {
                 fontWeight: '900',
                 fontSize: '20vw',
                 color: 'var(--primary)',
-                margin: '-5vh 0',
+                margin: '-5% 0',
                 textAlign: 'center',
-                bottom: '30vh',
+                bottom: '25%',
                 width: '100vw',
                 position: 'absolute'
               }}
@@ -238,7 +238,7 @@ function Home() {
                 color: 'var(--fadedcolour)',
                 left: '4vw',
                 textAlign: 'left',
-                bottom: '15vh',
+                bottom: '15%',
                 position: 'absolute',
                 width: '70vw'
               }}
@@ -255,7 +255,7 @@ function Home() {
                   left: '-4vw',
                   textAlign: 'right',
                   position: 'absolute',
-                  bottom: '10vh',
+                  bottom: '10%',
                   width: '100vw'
                 }}
               >
@@ -266,14 +266,14 @@ function Home() {
 
           <div style={{ position: 'relative', display: 'flex', width: '100vw'}}>
             {/* Green wave and rectangle*/}
-            <div style={{ position: 'absolute', width: '100vw', bottom: '0', top: '0'}}>
-              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'absolute', bottom: '0'}}>
+            <div style={{ position: 'absolute', width: '100vw', bottom: '0', top: '70px'}}>
+              <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'absolute', bottom: '0', top: '70px'}}>
                 {/* Blue rectangle */}
 
                 <div
                   style={{
                     width: '100vw',
-                    height: '40vh',
+                    height: '40%',
                     bottom: '0',
                     backgroundColor: 'rgba(210, 224, 239, 0.9)', // Match wave color with 0.9 alpha
                   }}
@@ -283,7 +283,7 @@ function Home() {
                 <div
                   style={{
                     width: '100%',
-                    height: '10vh',
+                    height: '10%',
                     display: 'inline-block',
                   }}
                 >
@@ -326,7 +326,7 @@ function Home() {
                   style={{
                     left: '-2vw',
                     width: '120vw',
-                    height: '5vh',
+                    height: '5%',
                     backgroundColor: 'rgba(65, 180, 122, 0.9)', // Match wave color with 0.9 alpha
                   }}
                 ></div>
@@ -335,7 +335,7 @@ function Home() {
                 <div
                   style={{
                     width: '100%',
-                    height: '10vh',
+                    height: '10%',
                     display: 'inline-block',
                   }}
                 >
