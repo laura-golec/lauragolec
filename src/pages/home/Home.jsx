@@ -181,7 +181,7 @@ function Home() {
                 fontSize: '15vw',
                 color: 'var(--accent)',
                 zIndex: '3',
-                bottom: '72%',
+                bottom: '80%',
                 left: '4vw',
                 position: 'absolute',
               }}
@@ -193,7 +193,7 @@ function Home() {
                 fontWeight: '600',
                 fontSize: '6vh',
                 color: 'var(--text)',
-                bottom: '65%',
+                bottom: '70%',
                 textAlign: 'center',
                 position: 'absolute',
                 width: '70vw',
@@ -274,7 +274,6 @@ function Home() {
                   style={{
                     width: '100vw',
                     height: '40%',
-                    bottom: '0',
                     backgroundColor: 'rgba(210, 224, 239, 0.9)', // Match wave color with 0.9 alpha
                   }}
                 ></div>
@@ -285,6 +284,7 @@ function Home() {
                     width: '100%',
                     height: '10%',
                     display: 'inline-block',
+                    paddingBottom: '2%'
                   }}
                 >
                   <div className="hero_area">
@@ -336,6 +336,7 @@ function Home() {
                   style={{
                     width: '100%',
                     height: '10%',
+                    paddingBottom: '0.7%',
                     display: 'inline-block',
                   }}
                 >
