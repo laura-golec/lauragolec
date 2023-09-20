@@ -3,7 +3,6 @@
     display: grid;
     justify-content: center;
     padding: 3vh 4vw 1vh 4vw;
-    overflow: hidden;
     box-sizing: border-box;
     justify-self: center;
 }
