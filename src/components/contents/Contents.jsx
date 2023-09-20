@@ -6,9 +6,6 @@ import { useLocation } from 'react-router-dom';
 import { ExpandMore } from '@mui/icons-material';
 import Fade from '@mui/material/Fade';
 
-
-var widths = [0, 700];
-
 const Contents = () => {
   const [headings, setHeadings] = useState([]);
   const { hash } = useLocation();
@@ -24,19 +21,11 @@ const Contents = () => {
     }));
 
     setHeadings(headingsArray);
-
-    if (hash) {
-      if (document.getElementById(hash)) {
-        scrollToHeading(hash);
-      } else {
-        console.log(hash + " nooooooo doesnt exist")
-      }
-    }
   }, []);
 
   function scrollToHeading(headingId) {
     console.log(headingId)
-    document.querySelector(headingId).scrollIntoView({ behavior: "smooth" });
+    document.querySelector(headingId).scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
   }
 
   useEffect(() => {
@@ -104,12 +93,12 @@ const Contents = () => {
         onClose={handleClose}
         TransitionComponent={Fade}
         sx={{
-          margin: '0',
-          padding: '0'
+          margin: '1vw',
+          padding: '1vw',
+          color: 'var(--mainbg)!important'
         }}
       >
-        <Box sx={{ padding: '0vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', borderRadius:'1vh'}}>
-          <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='2.5vh' padding='0 1vw'>List of Projects</Typography>
+          <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='2.5vh' padding='1vh 3vw'>List of Projects</Typography>
           <ul justifycontent='left' aligntext='left'>
             {headings.map((heading) => (
               <li key={heading.id} onClick={() => scrollToHeading(`#${heading.id}`)}>
@@ -121,7 +110,6 @@ const Contents = () => {
               </li>
             ))}
           </ul>
-        </Box>
       </Menu>
     </div>
   )

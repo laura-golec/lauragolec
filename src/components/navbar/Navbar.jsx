@@ -44,9 +44,9 @@ const Navbar = () => {
         borderBottom: "solid 1px var(--brightbg)",
         width: '100%',
         zIndex: 9999,
-        height: '100%',
+        height: '70px',
         margin: 0,
-        position: 'absolute',
+        position: 'fixed',
         boxSizing: 'border-box'
       }}
     >
@@ -96,6 +96,7 @@ const Navbar = () => {
       width: '100vw',
       zIndex: 9999,
       height: '70px',
+      position: 'fixed',
       boxSizing: 'border-box'
     }}>
       <IconButton onClick={openDrawer} sx={{ color: "var(--fadedcolour)", '&:hover': { color: "var(--primary)" } }}>
@@ -115,7 +116,7 @@ const Navbar = () => {
             width: '70vw',
             backgroundColor: 'var(--secondary)',
             display: 'flexbox',
-            height: '100vh'
+            height: '100%'
           }}
         >
           <Stack
@@ -124,7 +125,7 @@ const Navbar = () => {
             textAlign="center"
             display='flex'
           >
-            <Typography sx={{ fontSize: 25, fontWeight: 'bold', color:'var(--accent)', paddingTop:'20%', borderBottom:'2px solid'}}>
+            <Typography sx={{ fontSize: 25, fontWeight: 'bold', color:'var(--accent)', paddingTop:'50%', borderBottom:'2px solid'}}>
                 Laura Golec
             </Typography>
             <Link to="/" className="link-styling">
