@@ -19,6 +19,7 @@ function App() {
           position: 'relative',
           boxSizing: 'border-box',
           margin: '0',
+          overflowX: 'clip'
         }}
       >
         <Navbar sx={{ left: '0' }} />
