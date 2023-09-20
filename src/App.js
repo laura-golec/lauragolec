@@ -16,14 +16,14 @@ function App() {
           direction: 'column',
           height: '100%',
           width: '100%',
-          overflowX: 'hidden',
+          overflowX: 'auto',
           position: 'relative',
           boxSizing: 'border-box',
           margin: '0',
         }}
       >
         <Navbar sx={{ left: '0' }} />
-        <Box sx={{ overflowY: 'scroll', justifyContent: 'center', display: 'flex', maxWidth: '2048px', width: '100vw', justifySelf: 'center', boxSizing: 'border-box', overflow: 'scroll', height: '100%'}}>
+        <Box sx={{ overflowY: 'auto', justifyContent: 'center', display: 'flex', maxWidth: '2048px', width: '100vw', justifySelf: 'center', boxSizing: 'border-box', overflow: 'auto', height: 'calc(100% - 90px)'}}>
           <Outlet />
         </Box>
         <Footer />
