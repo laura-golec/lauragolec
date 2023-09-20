@@ -67,7 +67,7 @@ function Home() {
               fontSize: '8vw',
               zIndex: '1',
               color: 'var(--accent)',
-              top: '25%',
+              top: '20%',
               left: '15%'
             }}>
               Hey!
