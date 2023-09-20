@@ -266,7 +266,7 @@ function Home() {
 
           <div style={{ position: 'relative', display: 'flex', width: '100vw'}}>
             {/* Green wave and rectangle*/}
-            <div style={{ position: 'absolute', height: '100%', width: '100vw', bottom: '0'}}>
+            <div style={{ position: 'absolute', width: '100vw', bottom: '0', top: '0'}}>
               <div style={{ display: 'flex', flexDirection: 'column-reverse', width: '100%', position: 'absolute', bottom: '0'}}>
                 {/* Blue rectangle */}
 
