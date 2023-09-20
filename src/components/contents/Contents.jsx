@@ -55,10 +55,13 @@ const Contents = () => {
   };
   const handleClose = () => {
     setAnchorEl(null);
+    if (document.getElementById(hash.slice(1))) {
+      scrollToHeading(hash);
+    }
   };
 
   const renderWideScreenContents = () => (
-    <Box sx={{ padding: '8vh 1vw', position: 'sticky', top: 0, zIndex: 1, backgroundColor: 'var(--secondary)', justifycontent: 'center', }}>
+    <Box sx={{ padding: '8vh 1vw', position: 'sticky', top: 0, backgroundColor: 'var(--secondary)', justifycontent: 'center', }}>
       <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='1vh' padding='0 1vw'>List of Projects</Typography>
       <ul justifycontent='center' aligntext='center'>
         {headings.map((heading) => (
@@ -101,7 +104,7 @@ const Contents = () => {
           <Typography color='var(--primary)' variant='h4' borderBottom='2px solid' marginBottom='2.5vh' padding='1vh 3vw'>List of Projects</Typography>
           <ul justifycontent='left' aligntext='left'>
             {headings.map((heading) => (
-              <li key={heading.id} onClick={() => scrollToHeading(`#${heading.id}`)}>
+              <li key={heading.id} onClick={() => {scrollToHeading(`#${heading.id}`); {handleClose()};}}>
                 <Link to={`#${heading.id}`}>
                   <Typography variant='h6' marginBottom='1vh' width='100%'>
                     {heading.text}
